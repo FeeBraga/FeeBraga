@@ -40,8 +40,8 @@ Desenvolvo APIs, aplicações web e soluções escaláveis utilizando tecnologia
 
 <div align="center">
 
-<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="600">
-<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="600">
+<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="1000">
+<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="1000">
 
 </div>
 
