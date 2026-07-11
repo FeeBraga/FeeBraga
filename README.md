@@ -21,8 +21,6 @@
 
 
 
----
-
 <div align="center">
 
 <img src="profile/footer.svg" alt="Rodapé" width="1000">
