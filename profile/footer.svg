@@ -1,71 +1,303 @@
-<svg width="900" height="90" viewBox="0 0 900 90" xmlns="http://www.w3.org/2000/svg">
-
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" width="1200" height="200">
   <defs>
-    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#30363D"/>
-      <stop offset="50%" stop-color="#58A6FF"/>
-      <stop offset="100%" stop-color="#30363D"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161B22;stop-opacity:1" />
     </linearGradient>
 
-    <linearGradient id="node" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#58A6FF"/>
-      <stop offset="100%" stop-color="#7DD3FC"/>
+    <!-- Animated Background Gradient -->
+    <linearGradient id="animatedBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1">
+        <animate attributeName="stop-color" values="#0D1117;#161B22;#0D1117" dur="15s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" style="stop-color:#161B22;stop-opacity:1">
+        <animate attributeName="stop-color" values="#161B22;#0D1117;#161B22" dur="15s" repeatCount="indefinite" />
+      </stop>
     </linearGradient>
+
+    <!-- Blue Glow Gradient -->
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#58A6FF;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#58A6FF;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Energy Flow Gradient -->
+    <linearGradient id="energyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58A6FF;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#58A6FF;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#58A6FF;stop-opacity:0" />
+    </linearGradient>
+
+    <!-- Vertical Energy Gradient -->
+    <linearGradient id="verticalEnergy" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#58A6FF;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#58A6FF;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#58A6FF;stop-opacity:0" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#30363D" stroke-width="0.5" opacity="0.05" />
+    </pattern>
+
+    <!-- Breathing Animation -->
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="8s" repeatCount="indefinite" id="breathing" />
   </defs>
 
-  <!-- Main line -->
-  <line
-      x1="80"
-      y1="45"
-      x2="820"
-      y2="45"
-      stroke="url(#line)"
-      stroke-width="1.2"/>
+  <!-- Main Background -->
+  <rect width="1200" height="200" fill="url(#animatedBg)" />
+  <rect width="1200" height="200" fill="url(#gridPattern)" opacity="0.5" />
 
-  <!-- LEFT -->
-  <g stroke="#30363D" stroke-width="1.2" fill="none">
+  <!-- Blue Glow Effects -->
+  <ellipse cx="200" cy="100" rx="250" ry="100" fill="url(#blueGlow)" opacity="0.4">
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="10s" repeatCount="indefinite" />
+  </ellipse>
+  <ellipse cx="1000" cy="100" rx="250" ry="100" fill="url(#blueGlow)" opacity="0.4">
+    <animate attributeName="opacity" values="0.5;0.3;0.5" dur="10s" repeatCount="indefinite" />
+  </ellipse>
 
-      <path d="M80 45 H120 V25 H160"/>
+  <!-- Top Circuit Lines -->
+  <g opacity="0.3">
+    <!-- Left Circuit -->
+    <path d="M 0 20 L 150 20 L 150 60 L 200 60" fill="none" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="2s" fill="freeze" />
+    </path>
+    <path d="M 0 20 L 150 20 L 150 60 L 200 60" fill="none" stroke="url(#energyGradient)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,350;350,0" dur="6s" repeatCount="indefinite" />
+    </path>
 
-      <path d="M120 45 V65 H170"/>
-
-      <path d="M170 65 V45 H210"/>
-
-      <path d="M160 25 V12"/>
-
-      <circle cx="120" cy="45" r="3" fill="url(#node)"/>
-      <circle cx="160" cy="25" r="3" fill="url(#node)"/>
-      <circle cx="170" cy="65" r="3" fill="url(#node)"/>
-      <circle cx="210" cy="45" r="3" fill="url(#node)"/>
-
+    <!-- Right Circuit -->
+    <path d="M 1200 20 L 1050 20 L 1050 60 L 1000 60" fill="none" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="2s" fill="freeze" />
+    </path>
+    <path d="M 1200 20 L 1050 20 L 1050 60 L 1000 60" fill="none" stroke="url(#energyGradient)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,350;350,0" dur="7s" repeatCount="indefinite" />
+    </path>
   </g>
 
-  <!-- CENTER -->
-  <circle cx="450" cy="45" r="4" fill="#58A6FF"/>
+  <!-- Bottom Circuit Lines -->
+  <g opacity="0.3">
+    <!-- Left Circuit -->
+    <path d="M 0 180 L 150 180 L 150 140 L 200 140" fill="none" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="2.5s" fill="freeze" />
+    </path>
+    <path d="M 0 180 L 150 180 L 150 140 L 200 140" fill="none" stroke="url(#energyGradient)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,350;350,0" dur="6.5s" repeatCount="indefinite" />
+    </path>
 
-  <circle cx="435" cy="45" r="1.5" fill="#58A6FF"/>
-  <circle cx="465" cy="45" r="1.5" fill="#58A6FF"/>
-
-  <!-- RIGHT -->
-  <g stroke="#30363D" stroke-width="1.2" fill="none">
-
-      <path d="M820 45 H780 V25 H740"/>
-
-      <path d="M780 45 V65 H730"/>
-
-      <path d="M730 65 V45 H690"/>
-
-      <path d="M740 25 V12"/>
-
-      <circle cx="780" cy="45" r="3" fill="url(#node)"/>
-      <circle cx="740" cy="25" r="3" fill="url(#node)"/>
-      <circle cx="730" cy="65" r="3" fill="url(#node)"/>
-      <circle cx="690" cy="45" r="3" fill="url(#node)"/>
-
+    <!-- Right Circuit -->
+    <path d="M 1200 180 L 1050 180 L 1050 140 L 1000 140" fill="none" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="2.5s" fill="freeze" />
+    </path>
+    <path d="M 1200 180 L 1050 180 L 1050 140 L 1000 140" fill="none" stroke="url(#energyGradient)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,350;350,0" dur="7.5s" repeatCount="indefinite" />
+    </path>
   </g>
 
-  <!-- Decorative -->
-  <circle cx="280" cy="45" r="1.4" fill="#58A6FF" opacity=".5"/>
-  <circle cx="620" cy="45" r="1.4" fill="#58A6FF" opacity=".5"/>
+  <!-- Central Circuit Network -->
+  <g opacity="0.25">
+    <!-- Horizontal Lines -->
+    <line x1="300" y1="80" x2="500" y2="80" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.25" dur="3s" fill="freeze" />
+    </line>
+    <line x1="700" y1="80" x2="900" y2="80" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.25" dur="3s" fill="freeze" />
+    </line>
+    <line x1="300" y1="120" x2="500" y2="120" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.25" dur="3s" fill="freeze" />
+    </line>
+    <line x1="700" y1="120" x2="900" y2="120" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.25" dur="3s" fill="freeze" />
+    </line>
 
+    <!-- Vertical Lines -->
+    <line x1="400" y1="60" x2="400" y2="140" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.25" dur="3s" fill="freeze" />
+    </line>
+    <line x1="800" y1="60" x2="800" y2="140" stroke="#30363D" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.25" dur="3s" fill="freeze" />
+    </line>
+
+    <!-- Energy Flow on Horizontal Lines -->
+    <line x1="300" y1="80" x2="500" y2="80" stroke="url(#energyGradient)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,200;200,0" dur="8s" repeatCount="indefinite" />
+    </line>
+    <line x1="700" y1="120" x2="900" y2="120" stroke="url(#energyGradient)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,200;200,0" dur="9s" repeatCount="indefinite" />
+    </line>
+
+    <!-- Energy Flow on Vertical Lines -->
+    <line x1="400" y1="60" x2="400" y2="140" stroke="url(#verticalEnergy)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,80;80,0" dur="8.5s" repeatCount="indefinite" />
+    </line>
+    <line x1="800" y1="60" x2="800" y2="140" stroke="url(#verticalEnergy)" stroke-width="1.5" filter="url(#glow)">
+      <animate attributeName="stroke-dasharray" values="0,80;80,0" dur="9.5s" repeatCount="indefinite" />
+    </line>
+  </g>
+
+  <!-- Connected Nodes -->
+  <g>
+    <!-- Top Left Nodes -->
+    <circle cx="150" cy="20" r="4" fill="#58A6FF" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="r" values="4;5;4" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="60" r="3" fill="#58A6FF" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Top Right Nodes -->
+    <circle cx="1050" cy="20" r="4" fill="#58A6FF" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.5s" repeatCount="indefinite" />
+      <animate attributeName="r" values="4;5;4" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1000" cy="60" r="3" fill="#58A6FF" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Bottom Left Nodes -->
+    <circle cx="150" cy="180" r="4" fill="#58A6FF" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.2s" repeatCount="indefinite" />
+      <animate attributeName="r" values="4;5;4" dur="4.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="200" cy="140" r="3" fill="#58A6FF" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3.8s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Bottom Right Nodes -->
+    <circle cx="1050" cy="180" r="4" fill="#58A6FF" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.8s" repeatCount="indefinite" />
+      <animate attributeName="r" values="4;5;4" dur="4.8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1000" cy="140" r="3" fill="#58A6FF" opacity="0.6">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4.3s" repeatCount="indefinite" />
+    </circle>
+
+    <!-- Central Nodes -->
+    <circle cx="400" cy="80" r="3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="120" r="3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="80" r="3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="800" cy="120" r="3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5.8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Floating Particles -->
+  <g opacity="0.4">
+    <circle cx="250" cy="50" r="1.5" fill="#58A6FF">
+      <animate attributeName="cy" values="50;30;50" dur="12s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="12s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="350" cy="150" r="1" fill="#58A6FF">
+      <animate attributeName="cy" values="150;130;150" dur="14s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.15;0.4;0.15" dur="14s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="550" cy="100" r="1.5" fill="#58A6FF">
+      <animate attributeName="cy" values="100;80;100" dur="11s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="11s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="50" r="1" fill="#58A6FF">
+      <animate attributeName="cy" values="50;70;50" dur="13s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.15;0.4;0.15" dur="13s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="850" cy="150" r="1.5" fill="#58A6FF">
+      <animate attributeName="cy" values="150;130;150" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="15s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="950" cy="100" r="1" fill="#58A6FF">
+      <animate attributeName="cy" values="100;120;100" dur="16s" repeatCount="indefinite" />
+      <animate attributeName="opacity" values="0.15;0.4;0.15" dur="16s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Small Blinking Dots -->
+  <g>
+    <circle cx="50" cy="50" r="2" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="opacity" values="0;0.7;0" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1150" cy="50" r="2" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="opacity" values="0;0.7;0" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="50" cy="150" r="2" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="opacity" values="0;0.7;0" dur="5.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1150" cy="150" r="2" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="opacity" values="0;0.7;0" dur="6.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="300" cy="100" r="1.5" fill="#58A6FF" opacity="0.3">
+      <animate attributeName="opacity" values="0;0.5;0" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="900" cy="100" r="1.5" fill="#58A6FF" opacity="0.3">
+      <animate attributeName="opacity" values="0;0.5;0" dur="8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Central Text with Breathing Effect -->
+  <g transform="translate(600, 100)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" font-weight="400" fill="#8B949E">
+      <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze" />
+      Built with passion
+    </text>
+    <text x="0" y="20" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="12" font-weight="400" fill="#58A6FF">
+      <animate attributeName="opacity" values="0;1" dur="3.5s" fill="freeze" />
+      Felipe Braga
+    </text>
+  </g>
+
+  <!-- Decorative Lines Near Text -->
+  <g opacity="0.2">
+    <line x1="400" y1="100" x2="480" y2="100" stroke="#58A6FF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.2" dur="4s" fill="freeze" />
+      <animate attributeName="x2" values="400;480" dur="2s" fill="freeze" begin="2s" />
+    </line>
+    <line x1="720" y1="100" x2="800" y2="100" stroke="#58A6FF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.2" dur="4s" fill="freeze" />
+      <animate attributeName="x1" values="800;720" dur="2s" fill="freeze" begin="2s" />
+    </line>
+  </g>
+
+  <!-- Corner Accents -->
+  <g opacity="0.3">
+    <!-- Top Left -->
+    <path d="M 0 0 L 30 0 L 0 30" fill="none" stroke="#58A6FF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="3s" fill="freeze" />
+    </path>
+    <!-- Top Right -->
+    <path d="M 1200 0 L 1170 0 L 1200 30" fill="none" stroke="#58A6FF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="3s" fill="freeze" />
+    </path>
+    <!-- Bottom Left -->
+    <path d="M 0 200 L 30 200 L 0 170" fill="none" stroke="#58A6FF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="3s" fill="freeze" />
+    </path>
+    <!-- Bottom Right -->
+    <path d="M 1200 200 L 1170 200 L 1200 170" fill="none" stroke="#58A6FF" stroke-width="1">
+      <animate attributeName="opacity" values="0;0.3" dur="3s" fill="freeze" />
+    </path>
+  </g>
 </svg>
