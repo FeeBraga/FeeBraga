@@ -32,6 +32,7 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 ## Tech Stack
 
 [![My Skills](https://skillicons.dev/icons?i=python,fastapi,dotnet,react,typescript&perline=6)](https://skillicons.dev)
+
 [![My Skills](https://skillicons.dev/icons?i=postgres,docker,git,linux,firebase&perline=6)](https://skillicons.dev)
 
 ---
