@@ -6,29 +6,31 @@
 
 <div align="center">
 
-
-<p><em id="typing">Building intelligent solutions with modern technologies</em></p>
+<p><em>Desenvolvendo soluções inteligentes com tecnologias modernas.</em></p>
 
 </div>
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDhoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+)](https://felipebraga.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
-[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipebraga)
-[![Email](https://img.shields.io/badge/Email-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
+[![Portfólio](https://img.shields.io/badge/Portfólio-58A6FF?style=for-the-badge)](https://SEU-PORTFOLIO)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=for-the-badge&logo=linkedin&logoColor=white)](https://SEU-LINKEDIN)
+
+[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FeeBraga)
+
+[![E-mail](https://img.shields.io/badge/E--mail-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SEUEMAIL)
 
 </div>
 
 ---
 
-## About
+## 👨‍💻 Sobre
 
-Computer Engineering student focused on Full Stack Development and Artificial Intelligence. I build robust REST APIs, automate workflows, and create scalable solutions using modern technologies.
+Sou estudante de **Engenharia da Computação**, apaixonado por **Desenvolvimento Full Stack**, **Inteligência Artificial** e **Automação**. Gosto de desenvolver APIs, aplicações escaláveis e soluções que resolvem problemas reais, sempre buscando aprender novas tecnologias e evoluir como desenvolvedor.
 
 ---
 
-## Technologies
+## 🚀 Tecnologias
 
 [![My Skills](https://skillicons.dev/icons?i=python,fastapi,dotnet,react,typescript&perline=6)](https://skillicons.dev)
 
@@ -38,13 +40,11 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 
 <div align="center">
 
-<img src="profile/stats.svg" alt="GitHub Stats" width="400">
-<img src="profile/activity.svg" alt="Activity" width="400">
+<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="400">
+
+<img src="profile/activity.svg" alt="Atividade" width="400">
 
 </div>
-
-
-
 
 ---
 
