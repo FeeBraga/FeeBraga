@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 
 def fetch_activity_stats():
     """Fetch recent activity from GitHub API"""
-    username = "felipebraga"
+    username = "FeeBraga"
     token = os.environ.get('GITHUB_TOKEN')
     
     headers = {
