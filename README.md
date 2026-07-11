@@ -1,33 +1,20 @@
 <div align="center">
 
-<br>
+# Felipe Braga
 
-<h1 align="center">Felipe Braga</h1>
+**Full Stack Developer**  
+Computer Engineering Student
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=16&pause=2500&color=58A6FF&center=true&vCenter=true&width=400&lines=Full+Stack+Developer;Computer+Engineering+Student" alt="Typing Animation"/>
-</p>
+Building scalable solutions with modern technologies
 
-<p align="center">
-  <em>Building solutions through technology</em>
-</p>
+</div>
 
-<br>
+<div align="center">
 
-<a href="https://febragadev.netlify.app/">
-  <img src="https://img.shields.io/badge/Portfolio-58A6FF?style=flat&logo=vercel&logoColor=white" alt="Portfolio"/>
-</a>
-
-<a href="https://www.linkedin.com/in/felipebraga233/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-
-<a href="mailto:felipebraga233@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-
-<br>
-<br>
+[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDNoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+&logoColor=white)](https://felipebraga.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
+[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipebraga)
+[![Email](https://img.shields.io/badge/Email-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
 
 </div>
 
@@ -35,70 +22,61 @@
 
 ## About
 
-Computer Engineering student passionate about Artificial Intelligence, Full Stack development, APIs, and automation. Continuously learning new technologies to create impactful solutions.
+Computer Engineering student focused on Full Stack Development and Artificial Intelligence. I build robust REST APIs, automate workflows, and create scalable solutions using modern technologies. Passionate about clean code and continuous learning.
 
 ---
 
-## Tech Stack
+## Technologies
 
 ### Backend
-<img src="https://skillicons.dev/icons?i=python,cs,dotnet,fastapi" alt="Backend"/> ### Cloud
-<img src="https://skillicons.dev/icons?i=firebase" alt="Cloud"/> ### AI
-<img src="https://skillicons.dev/icons?i=pytorch" alt="AI"/>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 
 ### Frontend
-<img src="https://skillicons.dev/icons?i=react,ts,html,css" alt="Frontend"/>
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
 ### Database
-<img src="https://skillicons.dev/icons?i=postgres,sqlite" alt="Database"/>
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+
+### AI
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 
 ### Tools
-<img src="https://skillicons.dev/icons?i=git,docker,linux" alt="Tools"/>
-
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 
 ---
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=FeeBraga&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&icon_color=58A6FF&title_color=58A6FF&text_color=8B949E" alt="GitHub Stats" width="45%"/>
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=felipebraga&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&hide=contribs,prs)
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeeBraga&layout=compact&theme=transparent&hide_border=true&title_color=58A6FF&text_color=8B949E" alt="Top Languages" width="45%"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=FeeBraga&theme=transparent&hide_border=true&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=8B949E" alt="GitHub Streak" width="45%"/>
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=felipebraga&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
 
 </div>
 
 ---
 
-## Currently Studying
+## Current Focus
 
-- ASP.NET Core
-- React + TypeScript
-- Docker
-- Clean Architecture
-- Generative AI
+• ASP.NET Core  
+• React + TypeScript  
+• Docker  
+• Generative AI
 
 ---
 
 <div align="center">
 
-<a href="https://github.com/FeeBraga">
-  <img src="https://img.shields.io/badge/GitHub-FeeBraga-181717?style=flat&logo=github&logoColor=white" alt="GitHub"/>
-</a>
-
-<a href="https://www.linkedin.com/in/felipebraga233/">
-  <img src="https://img.shields.io/badge/LinkedIn-Felipe%20Braga-0A66C2?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-
-<a href="https://febragadev.netlify.app/">
-  <img src="https://img.shields.io/badge/Portfolio-7C3AED?style=flat" alt="Portfolio"/>
-</a>
-
-<a href="mailto:felipebraga233@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=flat&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-
-<br>
-<br>
+[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=flat-square&logo=github&logoColor=white)](https://github.com/felipebraga)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
+[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDNoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+&logoColor=white)](https://felipebraga.dev)
+[![Email](https://img.shields.io/badge/Email-58A6FF?style=flat-square&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
 
 </div>
