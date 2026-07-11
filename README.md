@@ -40,8 +40,8 @@ Desenvolvo APIs, aplicações web e soluções escaláveis utilizando tecnologia
 
 <div align="center">
 
-<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="400">
-<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="400">
+<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="600">
+<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="600">
 
 </div>
 
@@ -49,6 +49,6 @@ Desenvolvo APIs, aplicações web e soluções escaláveis utilizando tecnologia
 
 <div align="center">
 
-<img src="profile/footer.svg" alt="Rodapé" width="900">
+<img src="profile/footer.svg" alt="Rodapé" width="1000">
 
 </div>
