@@ -16,6 +16,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
 [![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipebraga)
 [![Email](https://img.shields.io/badge/Email-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
+[![Instagram](https://img.shields.io/badge/Instagram-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](https://www.instagram.com/febrraga/)
 </div>
 
 ---
