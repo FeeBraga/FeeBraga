@@ -12,10 +12,10 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDhoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+)](https://felipebraga.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
-[![GitHub](https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipebraga)
-[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-8B5CF6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDhoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+)](https://febragadev.netlify.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipebraga233/)
+[![GitHub](https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FeeBraga)
+[![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:felipebraga233@gmail.com)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/felipebraga)
 
 </div>
@@ -43,4 +43,8 @@ Sou estudante de **Engenharia da Computação**, apaixonado por **Desenvolviment
 <img src="profile/activity.svg" alt="Atividade" width="400">
 
 </div>
+📍 Belém • PA 🇧🇷
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=FeeBraga&style=flat-square&color=58A6FF" />
+</p>
