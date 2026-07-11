@@ -44,10 +44,3 @@ Sou estudante de **Engenharia da Computação**, apaixonado por **Desenvolviment
 
 </div>
 
----
-
-<div align="center">
-
-<img src="profile/footer.svg" alt="Footer" width="800">
-
-</div>
