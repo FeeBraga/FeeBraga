@@ -1,12 +1,7 @@
 <div align="center">
 
-<img src="profile/header.svg" alt="Cabeçalho" width="800">
-
-</div>
-
-<div align="center">
-
-<p><em>Desenvolvendo soluções inteligentes com tecnologias modernas.</em></p>
+<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="500">
+<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="500">
 
 </div>
 
@@ -22,18 +17,9 @@
 
 ## 🚀 Tecnologias
 
-[![My Skills](https://skillicons.dev/icons?i=postgres,docker,git,linux,firebase&perline=6)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=postgres,docker,git,linux,firebase,python,fastapi,dotnet,react,typescrip&perline=12)](https://skillicons.dev)
 
-[![My Skills](https://skillicons.dev/icons?i=python,fastapi,dotnet,react,typescript&perline=6)](https://skillicons.dev)
 
----
-
-<div align="center">
-
-<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="800">
-<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="800">
-
-</div>
 
 ---
 
