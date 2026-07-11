@@ -22,35 +22,57 @@ def fetch_activity_stats():
     headers = {k: v for k, v in headers.items() if v is not None}
     
     try:
-        # Fetch user events
-        events_response = requests.get(f'https://api.github.com/users/{username}/events/public?per_page=30', headers=headers)
+        # Fetch user events (100 events for better coverage)
+        events_response = requests.get(f'https://api.github.com/users/{username}/events/public?per_page=100', headers=headers)
+        events_response.raise_for_status()
         events_data = events_response.json()
         
-        # Count activity types in last 30 days
-        thirty_days_ago = datetime.now() - timedelta(days=30)
+        # Count activity types in last 90 days
+        ninety_days_ago = datetime.now() - timedelta(days=90)
         
         activity = {
             'commits': 0,
             'pull_requests': 0,
             'issues': 0,
-            'reviews': 0
+            'repositories': 0
         }
+        
+        # Track unique repositories
+        unique_repos = set()
         
         for event in events_data:
             if isinstance(event, dict):
                 event_date = datetime.strptime(event['created_at'], '%Y-%m-%dT%H:%M:%SZ')
-                if event_date > thirty_days_ago:
+                if event_date > ninety_days_ago:
                     event_type = event.get('type', '')
-                    if 'PushEvent' in event_type:
-                        activity['commits'] += 1
-                    elif 'PullRequest' in event_type:
+                    
+                    # Track unique repositories
+                    repo_name = event.get('repo', {}).get('name', '')
+                    if repo_name:
+                        unique_repos.add(repo_name)
+                    
+                    if event_type == 'PushEvent':
+                        # Count actual commits from payload
+                        payload = event.get('payload', {})
+                        commits = payload.get('commits', [])
+                        activity['commits'] += len(commits)
+                    elif event_type == 'PullRequestEvent':
                         activity['pull_requests'] += 1
-                    elif 'Issues' in event_type:
+                    elif event_type == 'IssuesEvent':
                         activity['issues'] += 1
-                    elif 'PullRequestReview' in event_type:
-                        activity['reviews'] += 1
+        
+        activity['repositories'] = len(unique_repos)
         
         return activity
+    except requests.exceptions.RequestException as e:
+        print(f"API Error fetching activity stats: {e}")
+        # Return default values if API fails
+        return {
+            'commits': 0,
+            'pull_requests': 0,
+            'issues': 0,
+            'repositories': 0
+        }
     except Exception as e:
         print(f"Error fetching activity stats: {e}")
         # Return default values if API fails
@@ -58,7 +80,7 @@ def fetch_activity_stats():
             'commits': 0,
             'pull_requests': 0,
             'issues': 0,
-            'reviews': 0
+            'repositories': 0
         }
 
 def generate_activity_svg(activity):
@@ -76,7 +98,7 @@ def generate_activity_svg(activity):
   <rect width="400" height="160" fill="url(#activityBg)" rx="8"/>
   
   <!-- Title -->
-  <text x="20" y="30" fill="#58A6FF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Activity (30 days)</text>
+  <text x="20" y="30" fill="#58A6FF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Activity (90 days)</text>
   
   <!-- Activity Grid -->
   <g font-family="system-ui, sans-serif" font-size="12">

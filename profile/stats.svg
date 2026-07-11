@@ -16,19 +16,19 @@
   <g font-family="system-ui, sans-serif" font-size="12">
     <!-- Repos -->
     <text x="20" y="70" fill="#8B949E">Repositories</text>
-    <text x="380" y="70" fill="#C9D1D9" text-anchor="end" font-weight="600">18</text>
+    <text x="380" y="70" fill="#C9D1D9" text-anchor="end" font-weight="600">15</text>
     
     <!-- Followers -->
     <text x="20" y="100" fill="#8B949E">Followers</text>
-    <text x="380" y="100" fill="#C9D1D9" text-anchor="end" font-weight="600">5</text>
+    <text x="380" y="100" fill="#C9D1D9" text-anchor="end" font-weight="600">1</text>
     
     <!-- Following -->
     <text x="20" y="130" fill="#8B949E">Following</text>
-    <text x="380" y="130" fill="#C9D1D9" text-anchor="end" font-weight="600">35</text>
+    <text x="380" y="130" fill="#C9D1D9" text-anchor="end" font-weight="600">5</text>
     
     <!-- Stars -->
     <text x="20" y="160" fill="#8B949E">Stars</text>
-    <text x="380" y="160" fill="#C9D1D9" text-anchor="end" font-weight="600">0</text>
+    <text x="380" y="160" fill="#C9D1D9" text-anchor="end" font-weight="600">2</text>
   </g>
   
   <!-- Border -->

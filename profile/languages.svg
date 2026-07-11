@@ -14,21 +14,25 @@
   
   <!-- Language Bars -->
 
-    <text x="20" y="70" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Kotlin</text>
-    <rect x="120" y="62" width="50.0" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
-    <text x="380" y="70" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">25.0%</text>
+    <text x="20" y="70" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Python</text>
+    <rect x="120" y="62" width="61.53846153846154" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
+    <text x="380" y="70" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">30.8%</text>
 
-    <text x="20" y="95" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Go</text>
-    <rect x="120" y="87" width="50.0" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
-    <text x="380" y="95" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">25.0%</text>
+    <text x="20" y="95" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">CSS</text>
+    <rect x="120" y="87" width="61.53846153846154" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
+    <text x="380" y="95" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">30.8%</text>
 
-    <text x="20" y="120" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">Java</text>
-    <rect x="120" y="112" width="50.0" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
-    <text x="380" y="120" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">25.0%</text>
+    <text x="20" y="120" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">JavaScript</text>
+    <rect x="120" y="112" width="46.15384615384615" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
+    <text x="380" y="120" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">23.1%</text>
 
-    <text x="20" y="145" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">PowerShell</text>
-    <rect x="120" y="137" width="50.0" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
-    <text x="380" y="145" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">25.0%</text>
+    <text x="20" y="145" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">C++</text>
+    <rect x="120" y="137" width="15.384615384615385" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
+    <text x="380" y="145" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">7.7%</text>
+
+    <text x="20" y="170" fill="#8B949E" font-family="system-ui, sans-serif" font-size="11">HTML</text>
+    <rect x="120" y="162" width="15.384615384615385" height="12" fill="#58A6FF" rx="2" opacity="0.8"/>
+    <text x="380" y="170" fill="#C9D1D9" font-family="system-ui, sans-serif" font-size="11" text-anchor="end">7.7%</text>
 
   
   <!-- Border -->

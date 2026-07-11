@@ -10,7 +10,7 @@
   <rect width="400" height="160" fill="url(#activityBg)" rx="8"/>
   
   <!-- Title -->
-  <text x="20" y="30" fill="#58A6FF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Activity (30 days)</text>
+  <text x="20" y="30" fill="#58A6FF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Activity (90 days)</text>
   
   <!-- Activity Grid -->
   <g font-family="system-ui, sans-serif" font-size="12">
