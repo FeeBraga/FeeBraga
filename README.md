@@ -1,3 +1,6 @@
+<h3>Olá, Fique a vontade :) </h3>
+
+
 <div align="center">
 
 <img src="profile/stats.svg" alt="Estatísticas do GitHub" width="420">
