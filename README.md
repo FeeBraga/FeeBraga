@@ -6,6 +6,8 @@
 
 <div align="center">
 
+# Felipe Braga
+
 <p><em id="typing">Building intelligent solutions with modern technologies</em></p>
 
 </div>
@@ -16,8 +18,6 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipebraga233/)
 [![GitHub](https://img.shields.io/badge/GitHub-24292F?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FeeBraga)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:felipebraga233@gmail.com)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/felipebraga)
-
 
 </div>
 
@@ -31,9 +31,7 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 
 ## Technologies
 
-[![My Skills](https://skillicons.dev/icons?i=postgres,docker,git,linux,firebase&perline=6)](https://skillicons.dev)
-
-[![My Skills](https://skillicons.dev/icons?i=python,fastapi,dotnet,react,typescript&perline=6)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,fastapi,csharp,dotnet,react,typescript,postgres,docker,git,linux,firebase&perline=6)](https://skillicons.dev)
 
 ---
 
@@ -44,11 +42,18 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 
 </div>
 
+---
+
+<div align="center">
+
+<img src="profile/activity.svg" alt="Activity" width="400">
+
+</div>
 
 ---
 
 <div align="center">
 
-<img src="profile/footer.svg" alt="Footer" width="800">
+<img src="profile/footer.svg" alt="Footer" width="900">
 
 </div>
