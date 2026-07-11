@@ -3,7 +3,11 @@
 <img src="profile/stats.svg" alt="Estatísticas do GitHub" width="420">
 <img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="420">
 
+
 <div align="center">
+<br>
+
+<br>
 
 [![Portfólio](https://img.shields.io/badge/Portfólio-8B5CF6?style=for-the-badge)](https://febragadev.netlify.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/felipebraga233/)
