@@ -5,7 +5,7 @@
 **Full Stack Developer**  
 Computer Engineering Student
 
-Building scalable solutions with modern technologies
+<p><em id="typing">Building scalable solutions with modern technologies</em></p>
 
 </div>
 
@@ -18,6 +18,8 @@ Building scalable solutions with modern technologies
 
 </div>
 
+<br>
+
 ---
 
 ## About
@@ -28,30 +30,30 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 
 ## Technologies
 
-### Backend
+**Backend**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
 ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 
-### Frontend
+**Frontend**  
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 
-### Database
+**Database**  
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
 
-### AI
+**AI**  
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 
-### Tools
+**Tools**  
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 
----
+<br>
 
 <div align="center">
 
@@ -60,6 +62,8 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=felipebraga&layout=compact&theme=dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9)
 
 </div>
+
+<br>
 
 ---
 
@@ -71,6 +75,8 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 • Generative AI
 
 ---
+
+<br>
 
 <div align="center">
 
