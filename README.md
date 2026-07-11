@@ -30,24 +30,19 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 
 ## Technologies
 
-[![My Skills](https://skillicons.dev/icons?i=python,fastapi,csharp,dotnet,react,typescript,postgres,docker,git,linux,firebase&perline=6)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=python,fastapi,dotnet,react,typescript,postgres,docker,git,linux,firebase&perline=6)](https://skillicons.dev)
 
 ---
 
 <div align="center">
 
 <img src="profile/stats.svg" alt="GitHub Stats" width="400">
-<img src="profile/languages.svg" alt="Top Languages" width="400">
-
-</div>
-
----
-
-<div align="center">
-
 <img src="profile/activity.svg" alt="Activity" width="400">
 
 </div>
+
+
+
 
 ---
 
