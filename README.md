@@ -42,7 +42,9 @@ Computer Engineering student passionate about Artificial Intelligence, Full Stac
 ## Tech Stack
 
 ### Backend
-<img src="https://skillicons.dev/icons?i=python,cs,dotnet,fastapi" alt="Backend"/>
+<img src="https://skillicons.dev/icons?i=python,cs,dotnet,fastapi" alt="Backend"/> ### Cloud
+<img src="https://skillicons.dev/icons?i=firebase" alt="Cloud"/> ### AI
+<img src="https://skillicons.dev/icons?i=pytorch" alt="AI"/>
 
 ### Frontend
 <img src="https://skillicons.dev/icons?i=react,ts,html,css" alt="Frontend"/>
@@ -53,11 +55,6 @@ Computer Engineering student passionate about Artificial Intelligence, Full Stac
 ### Tools
 <img src="https://skillicons.dev/icons?i=git,docker,linux" alt="Tools"/>
 
-### Cloud
-<img src="https://skillicons.dev/icons?i=firebase" alt="Cloud"/>
-
-### AI
-<img src="https://skillicons.dev/icons?i=pytorch" alt="AI"/>
 
 ---
 
@@ -66,9 +63,6 @@ Computer Engineering student passionate about Artificial Intelligence, Full Stac
 <img src="https://github-readme-stats.vercel.app/api?username=FeeBraga&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&icon_color=58A6FF&title_color=58A6FF&text_color=8B949E" alt="GitHub Stats" width="45%"/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeeBraga&layout=compact&theme=transparent&hide_border=true&title_color=58A6FF&text_color=8B949E" alt="Top Languages" width="45%"/>
-
-<br>
-<br>
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=FeeBraga&theme=transparent&hide_border=true&stroke=58A6FF&ring=58A6FF&fire=58A6FF&currStreakLabel=8B949E" alt="GitHub Streak" width="45%"/>
 
