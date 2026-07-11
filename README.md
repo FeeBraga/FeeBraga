@@ -11,10 +11,10 @@ Computer Engineering Student
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDNoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+&logoColor=white)](https://felipebraga.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
-[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipebraga)
-[![Email](https://img.shields.io/badge/Email-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNThBNkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTIgM2gyMHYyMEgyeiIvPjxwYXRoIGQ9Ik0yIDloMjAiLz48cGF0aCBkPSJNMTIgOXYxMSIvPjxwYXRoIGQ9Ik0xMiA5bC01IDUiLz48cGF0aCBkPSJNMTIgOWw1IDUiLz48L3N2Zz4=&logoColor=58A6FF)](https://felipebraga.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=58A6FF)](https://linkedin.com/in/felipebraga)
+[![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=58A6FF)](https://github.com/felipebraga)
+[![Email](https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=58A6FF)](mailto:contato@felipebraga.dev)
 
 </div>
 
@@ -24,34 +24,23 @@ Computer Engineering Student
 
 ## About
 
-Computer Engineering student focused on Full Stack Development and Artificial Intelligence. I build robust REST APIs, automate workflows, and create scalable solutions using modern technologies. Passionate about clean code and continuous learning.
+Computer Engineering student focused on Full Stack Development and Artificial Intelligence. I build robust REST APIs, automate workflows, and create scalable solutions using modern technologies.
 
 ---
 
 ## Technologies
 
 **Backend**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
-![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=flat-square&logo=dotnet&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=python,csharp,dotnet,fastapi&perline=4)](https://skillicons.dev)
 
 **Frontend**  
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+[![My Skills](https://skillicons.dev/icons?i=react,typescript,javascript,html&perline=4)](https://skillicons.dev)
 
-**Database**  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)
+**Database & Cloud**  
+[![My Skills](https://skillicons.dev/icons?i=postgres,sqlite,firebase,azure&perline=4)](https://skillicons.dev)
 
-**AI**  
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
-
-**Tools**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
+**Tools & AI**  
+[![My Skills](https://skillicons.dev/icons?i=docker,git,linux,openai&perline=4)](https://skillicons.dev)
 
 <br>
 
@@ -67,22 +56,11 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 
 ---
 
-## Current Focus
-
-• ASP.NET Core  
-• React + TypeScript  
-• Docker  
-• Generative AI
-
----
-
-<br>
-
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=flat-square&logo=github&logoColor=white)](https://github.com/felipebraga)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
-[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDNoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+&logoColor=white)](https://felipebraga.dev)
-[![Email](https://img.shields.io/badge/Email-58A6FF?style=flat-square&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNThBNkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTIgM2gyMHYyMEgyeiIvPjxwYXRoIGQ9Ik0yIDloMjAiLz48cGF0aCBkPSJNMTIgOXYxMSIvPjxwYXRoIGQ9Ik0xMiA5bC01IDUiLz48cGF0aCBkPSJNMTIgOWw1IDUiLz48L3N2Zz4=&logoColor=58A6FF)](https://felipebraga.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=flat-square&logo=linkedin&logoColor=58A6FF)](https://linkedin.com/in/felipebraga)
+[![GitHub](https://img.shields.io/badge/GitHub-0D1117?style=flat-square&logo=github&logoColor=58A6FF)](https://github.com/felipebraga)
+[![Email](https://img.shields.io/badge/Email-0D1117?style=flat-square&logo=gmail&logoColor=58A6FF)](mailto:contato@felipebraga.dev)
 
 </div>
