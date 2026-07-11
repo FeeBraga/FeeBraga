@@ -1,108 +1,124 @@
 <div align="center">
 
-<br/>
+# 👋 Olá, eu sou Felipe Braga Ribeiro
 
-<a href="https://github.com/Bragabyte">
-  <img src="https://github-readme-stats.vercel.app/api?username=Bragabyte&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&hide=contribs&custom_title=GitHub%20Stats" alt="GitHub Stats" width="49%"/>
-</a>
-<a href="https://github.com/Bragabyte">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bragabyte&theme=transparent&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="GitHub Streak" width="49%"/>
-</a>
-
-<br/>
-
-<a href="https://github.com/Bragabyte">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bragabyte&layout=compact&theme=transparent&hide_border=true&langs_count=8&hide_title=true" alt="Top Languages" width="49%"/>
-</a>
-
-<br/>
-
-</div>
-
----
-
-<div align="center">
-
-<h1>
-  Felipe Braga Ribeiro
-</h1>
-
-<h3>
-  Full Stack Developer em Formação | Engenharia da Computação
-</h3>
+### Full Stack Developer em formação • Engenharia da Computação
 
 <p>
-  <a href="https://github.com/Bragabyte">
-    <img src="https://img.shields.io/badge/GitHub-Bragabyte-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="https://www.linkedin.com/in/felipebraga233/">
-    <img src="https://img.shields.io/badge/LinkedIn-felipebraga233-0077B5?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://www.instagram.com/febrraga/">
-    <img src="https://img.shields.io/badge/Instagram-febrraga-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"/>
-  </a>
-  <a href="https://jdyd2002.github.io/Portif-lio/">
-    <img src="https://img.shields.io/badge/Portf%C3%B3lio-Online-8B5CF6?style=flat-square&logo=githubpages&logoColor=white" alt="Portfólio"/>
-  </a>
-  <a href="mailto:seuemail@email.com">
-    <img src="https://img.shields.io/badge/Email-Contact-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3500&pause=1000&center=true&vCenter=true&width=700&lines=Inteligência+Artificial+Generativa;Desenvolvimento+Full+Stack;FastAPI+%7C+React+%7C+ASP.NET;Sempre+aprendendo+algo+novo." />
 </p>
+
+<a href="https://github.com/Bragabyte">
+<img src="https://github-readme-stats.vercel.app/api?username=Bragabyte&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&hide=contribs" width="49%" />
+</a>
+
+<a href="https://github.com/Bragabyte">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Bragabyte&theme=transparent&hide_border=true" width="49%" />
+</a>
+
+<a href="https://github.com/Bragabyte">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bragabyte&layout=compact&theme=transparent&hide_border=true" width="45%" />
+</a>
 
 </div>
 
 ---
 
-## Sobre
+## 👨‍💻 Sobre
 
-Estudante de Engenharia da Computação e Técnico em Informática. Apaixonado por Inteligência Artificial Generativa, Desenvolvimento Full Stack e tecnologia com propósito. Busco criar soluções que gerem impacto real na vida das pessoas.
+Sou estudante de **Engenharia da Computação** e Técnico em Informática, apaixonado por **Inteligência Artificial Generativa**, **Desenvolvimento Full Stack** e **Automação**.
+
+Gosto de transformar ideias em soluções úteis, criando aplicações que unem tecnologia, criatividade e impacto real.
+
+Atualmente busco minha primeira oportunidade profissional para continuar evoluindo como desenvolvedor.
 
 ---
 
-## Tecnologias
+## 🚀 Tech Stack
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,cs,dotnet,js,ts,react,html,css,tailwind,fastapi,firebase,sqlite,postgres,docker,git,github,vscode,arduino,linux" alt="Technologies"/>
+<img src="https://skillicons.dev/icons?i=python,cs,dotnet,js,ts,react,html,css,tailwind,fastapi,firebase,sqlite,postgres,docker,git,github,vscode,visualstudio,linux,arduino" />
+
+<br><br>
+
+<img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white"/>
+
+<img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge"/>
+
+<img src="https://img.shields.io/badge/OpenRouter-5B4BFF?style=for-the-badge"/>
 
 </div>
 
 ---
 
-## Áreas de Interesse
+## 💼 Áreas de Interesse
 
-- Inteligência Artificial Generativa
-- Desenvolvimento Full Stack
-- APIs REST
-- Cloud Computing
-- Automação
-- IoT
-- Engenharia de Software
+- 🤖 Inteligência Artificial Generativa
+- 🌐 Desenvolvimento Full Stack
+- ⚙️ APIs REST
+- ☁️ Cloud Computing
+- 🔄 Automação
+- 📡 IoT e Sistemas Embarcados
+- 🧩 Arquitetura de Software
 
 ---
 
-## Projetos
+## 📌 Projetos em Destaque
 
-🩺 Hoper Saúde
-Assistente inteligente para saúde.
-FastAPI • Firebase • OpenAI
+| Projeto | Tecnologias |
+|---------|-------------|
+| 🩺 **Hoper Saúde** | FastAPI • Firebase • OpenAI |
+| 🤖 **Jesusinho Virtual** | Python • FastAPI • IA Generativa |
+| 💰 **Controle de Gastos** | ASP.NET Core • React • SQLite |
+| 🤖 **Neeko** | Python • Ollama |
+| 🚗 **Carrinho ESP32** | Arduino • ESP32 • C++ |
+| 🚨 **Botão de Emergência** | Python • WhatsApp • Telegram |
 
-🤖 Jesusinho Virtual
-Assistente virtual com IA.
-Python • FastAPI • IA Generativa
+➡️ Veja todos os projetos nos meus repositórios.
 
-💰 Controle de Gastos
-Sistema Full Stack.
-C# • ASP.NET • React • SQLite
+---
 
-🤖 Neeko
-Chat local utilizando Ollama.
-Python • Ollama
+## 📚 Atualmente estudando
 
-🚗 Carrinho ESP32
-Projeto de robótica e IoT.
-ESP32 • Arduino • C++
+- ASP.NET Core
+- React + TypeScript
+- Docker
+- Arquitetura de Software
+- Inteligência Artificial Generativa
 
-⚡ Botão de Emergência
-Automação integrada com WhatsApp e Telegram.
-Python • WhatsApp API • Telegram API
+---
+
+## 🌎 Vamos nos conectar
+
+<div align="center">
+
+<a href="https://github.com/Bragabyte">
+<img src="https://img.shields.io/badge/GitHub-Bragabyte-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="https://www.linkedin.com/in/felipebraga233/">
+<img src="https://img.shields.io/badge/LinkedIn-Felipe%20Braga-0A66C2?style=for-the-badge&logo=linkedin"/>
+</a>
+
+<a href="https://www.instagram.com/febrraga/">
+<img src="https://img.shields.io/badge/Instagram-@febrraga-E4405F?style=for-the-badge&logo=instagram"/>
+</a>
+
+<a href="https://jdyd2002.github.io/Portif-lio/">
+<img src="https://img.shields.io/badge/Portfólio-Online-7C3AED?style=for-the-badge"/>
+</a>
+
+<a href="mailto:SEUEMAIL">
+<img src="https://img.shields.io/badge/Email-Contato-EA4335?style=for-the-badge&logo=gmail"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+### 💡 *"Tecnologia com propósito. Sempre aprendendo, sempre construindo."*
+
+</div>
