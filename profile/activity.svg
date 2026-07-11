@@ -1,0 +1,32 @@
+<svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="activityBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#161B22"/>
+      <stop offset="100%" style="stop-color:#0D1117"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="160" fill="url(#activityBg)" rx="8"/>
+  
+  <!-- Title -->
+  <text x="20" y="30" fill="#58A6FF" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Activity (30 days)</text>
+  
+  <!-- Activity Grid -->
+  <g font-family="system-ui, sans-serif" font-size="12">
+    <!-- Commits -->
+    <text x="20" y="70" fill="#8B949E">Commits</text>
+    <text x="380" y="70" fill="#C9D1D9" text-anchor="end" font-weight="600">0</text>
+    
+    <!-- Pull Requests -->
+    <text x="20" y="100" fill="#8B949E">Pull Requests</text>
+    <text x="380" y="100" fill="#C9D1D9" text-anchor="end" font-weight="600">0</text>
+    
+    <!-- Issues -->
+    <text x="20" y="130" fill="#8B949E">Issues</text>
+    <text x="380" y="130" fill="#C9D1D9" text-anchor="end" font-weight="600">0</text>
+  </g>
+  
+  <!-- Border -->
+  <rect width="400" height="160" fill="none" stroke="#30363D" stroke-width="1" rx="8"/>
+</svg>
