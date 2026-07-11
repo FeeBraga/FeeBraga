@@ -2,7 +2,7 @@
 
 <br>
 
-<img src="https://raw.githubusercontent.com/FeeBraga/FeeBraga/main/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%"/>
+<img src="https://raw.githubusercontent.com/FeeBraga/FeeBraga/main/github-contribution-grid-snake.svg" alt="" width="100%"/>
 
 <br>
 
