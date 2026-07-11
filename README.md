@@ -40,7 +40,7 @@ Sou estudante de **Engenharia da Computação**, apaixonado por **Desenvolviment
 
 <img src="profile/stats.svg" alt="Estatísticas do GitHub" width="400">
 
-<img src="profile/activity.svg" alt="Atividade" width="400">
+<img src="profile/languages.svg">
 
 </div>
                📍 Belém • PA 🇧🇷
