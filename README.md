@@ -98,11 +98,11 @@
 <img src="https://img.shields.io/badge/Instagram-@febrraga-E4405F?style=for-the-badge&logo=instagram"/>
 </a>
 
-<a href="https://jdyd2002.github.io/Portif-lio/">
+<a href="https://febragadev.netlify.app/">
 <img src="https://img.shields.io/badge/Portfólio-Online-7C3AED?style=for-the-badge"/>
 </a>
 
-<a href="mailto:SEUEMAIL">
+<a href="mailto:felipebraga233@gmail.com">
 <img src="https://img.shields.io/badge/Email-Contato-EA4335?style=for-the-badge&logo=gmail"/>
 </a>
 
