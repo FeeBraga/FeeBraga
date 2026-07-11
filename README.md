@@ -1,44 +1,36 @@
 <div align="center">
 
-# 👋 Olá, eu sou Felipe Braga Ribeiro
+# 👋 Olá! Eu sou Felipe
 
-### Full Stack Developer em formação • Engenharia da Computação
+### 💻 Full Stack Developer em formação • Engenharia da Computação
 
-<p>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3500&pause=1000&center=true&vCenter=true&width=700&lines=Inteligência+Artificial+Generativa;Desenvolvimento+Full+Stack;FastAPI+%7C+React+%7C+ASP.NET;Sempre+aprendendo+algo+novo." />
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&lines=Inteligência+Artificial+Generativa;Desenvolvimento+Full+Stack;FastAPI+•+React+•+ASP.NET;Sempre+aprendendo+algo+novo." />
 
-<a href= "https://github.com/FeeBraga">
-<img src="https://github-readme-stats.vercel.app/api?username=FeeBraga&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&hide=contribs" width="49%" />
-</a>
+<br><br>
 
-<a href="https://github.com/FeeBraga">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Bragabyte&theme=transparent&hide_border=true" width="49%" />
-</a>
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=FeeBraga&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true"/>
 
-<a href="https://github.com/FeeBraga">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeeBraga&layout=compact&theme=transparent&hide_border=true" width="45%" />
-</a>
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeeBraga&layout=compact&theme=transparent&hide_border=true"/>
 
 </div>
 
 ---
 
-## 👨‍💻 Sobre
+# 👨‍💻 Sobre mim
 
-Sou estudante de **Engenharia da Computação** e Técnico em Informática, apaixonado por **Inteligência Artificial Generativa**, **Desenvolvimento Full Stack** e **Automação**.
+🎓 Estudante de **Engenharia da Computação** e **Técnico em Informática**.
 
-Gosto de transformar ideias em soluções úteis, criando aplicações que unem tecnologia, criatividade e impacto real.
+🚀 Apaixonado por **Inteligência Artificial**, **Desenvolvimento Full Stack**, **Automação** e **IoT**.
 
-Atualmente busco minha primeira oportunidade profissional para continuar evoluindo como desenvolvedor.
+💡 Gosto de transformar ideias em aplicações úteis, explorando novas tecnologias e criando soluções que gerem impacto real.
 
 ---
 
-## 🚀 Tech Stack
+# 🚀 Tecnologias
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,cs,dotnet,js,ts,react,html,css,tailwind,fastapi,firebase,sqlite,postgres,docker,git,github,vscode,visualstudio,linux,arduino" />
+<img src="https://skillicons.dev/icons?i=python,cs,dotnet,js,ts,react,html,css,tailwind,fastapi,firebase,sqlite,postgres,docker,git,github,vscode,visualstudio,linux,arduino"/>
 
 <br><br>
 
@@ -52,49 +44,50 @@ Atualmente busco minha primeira oportunidade profissional para continuar evoluin
 
 ---
 
-## 💼 Áreas de Interesse
+# 💼 Áreas de Interesse
 
 - 🤖 Inteligência Artificial Generativa
 - 🌐 Desenvolvimento Full Stack
 - ⚙️ APIs REST
 - ☁️ Cloud Computing
+- 📱 Desenvolvimento de Sistemas
 - 🔄 Automação
 - 📡 IoT e Sistemas Embarcados
-- 🧩 Arquitetura de Software
+- 🧠 Engenharia de Software
 
 ---
 
-## 📌 Projetos em Destaque
+# 📌 Projetos
 
-| Projeto | Tecnologias |
-|---------|-------------|
-| 🩺 **Hoper Saúde** | FastAPI • Firebase • OpenAI |
-| 🤖 **Jesusinho Virtual** | Python • FastAPI • IA Generativa |
-| 💰 **Controle de Gastos** | ASP.NET Core • React • SQLite |
-| 🤖 **Neeko** | Python • Ollama |
-| 🚗 **Carrinho ESP32** | Arduino • ESP32 • C++ |
-| 🚨 **Botão de Emergência** | Python • WhatsApp • Telegram |
+| 🚀 Projeto | 🛠 Tecnologias |
+|------------|----------------|
+| 🩺 Hoper Saúde | FastAPI • Firebase • IA • Google Maps |
+| 🤖 Jesusinho Virtual | Python • FastAPI • OpenAI |
+| 💰 Controle de Gastos | ASP.NET Core • React • SQLite |
+| 🤖 Neeko | Ollama • Python |
+| 🚗 Carrinho ESP32 | ESP32 • Arduino • Bluetooth |
+| 🚨 Botão de Emergência | Python • WhatsApp • Telegram |
 
-➡️ Veja todos os projetos nos meus repositórios.
+➡️ **Veja mais nos meus repositórios.**
 
 ---
 
-## 📚 Atualmente estudando
+# 📖 Atualmente estudando
 
 - ASP.NET Core
 - React + TypeScript
 - Docker
-- Arquitetura de Software
+- Clean Architecture
 - Inteligência Artificial Generativa
 
 ---
 
-## 🌎 Vamos nos conectar
+# 🌎 Contato
 
 <div align="center">
 
-<a href="https://github.com/Bragabyte">
-<img src="https://img.shields.io/badge/GitHub-Bragabyte-181717?style=for-the-badge&logo=github"/>
+<a href="https://github.com/FeeBraga">
+<img src="https://img.shields.io/badge/GitHub-FeeBraga-181717?style=for-the-badge&logo=github"/>
 </a>
 
 <a href="https://www.linkedin.com/in/felipebraga233/">
@@ -119,6 +112,6 @@ Atualmente busco minha primeira oportunidade profissional para continuar evoluin
 
 <div align="center">
 
-### 💡 *"Tecnologia com propósito. Sempre aprendendo, sempre construindo."*
+### ⭐ "Transformando ideias em soluções através da tecnologia."
 
 </div>
