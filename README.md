@@ -43,8 +43,8 @@ Sou estudante de **Engenharia da Computação**, apaixonado por **Desenvolviment
 <img src="profile/activity.svg" alt="Atividade" width="400">
 
 </div>
-📍 Belém • PA 🇧🇷
+               📍 Belém • PA 🇧🇷
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=FeeBraga&style=flat-square&color=58A6FF" />
+    <img src="https://komarev.com/ghpvc/?username=FeeBraga&style=flat-square&color=58A6FF" />
 </p>
