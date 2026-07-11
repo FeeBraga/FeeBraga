@@ -10,7 +10,7 @@ from collections import Counter
 
 def fetch_language_stats():
     """Fetch language statistics from GitHub API"""
-    username = "felipebraga"
+    username = "FeeBraga"
     token = os.environ.get('GITHUB_TOKEN')
     
     headers = {
