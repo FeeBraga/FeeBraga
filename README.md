@@ -8,16 +8,16 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3500&pause=1000&center=true&vCenter=true&width=700&lines=Inteligência+Artificial+Generativa;Desenvolvimento+Full+Stack;FastAPI+%7C+React+%7C+ASP.NET;Sempre+aprendendo+algo+novo." />
 </p>
 
-<a href="https://github.com/Bragabyte">
-<img src="https://github-readme-stats.vercel.app/api?username=Bragabyte&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&hide=contribs" width="49%" />
+<a href= "https://github.com/FeeBraga">
+<img src="https://github-readme-stats.vercel.app/api?username=FeeBraga&show_icons=true&theme=transparent&hide_border=true&include_all_commits=true&count_private=true&hide=contribs" width="49%" />
 </a>
 
-<a href="https://github.com/Bragabyte">
+<a href="https://github.com/FeeBraga">
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Bragabyte&theme=transparent&hide_border=true" width="49%" />
 </a>
 
-<a href="https://github.com/Bragabyte">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Bragabyte&layout=compact&theme=transparent&hide_border=true" width="45%" />
+<a href="https://github.com/FeeBraga">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeeBraga&layout=compact&theme=transparent&hide_border=true" width="45%" />
 </a>
 
 </div>
