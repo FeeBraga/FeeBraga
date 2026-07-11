@@ -20,16 +20,6 @@
 
 </div>
 
----
-
-## 👨‍💻 Sobre
-
-Sou estudante de **Engenharia da Computação**, apaixonado por **Desenvolvimento Full Stack**, **Inteligência Artificial** e **Automação**.
-
-Desenvolvo APIs, aplicações web e soluções escaláveis utilizando tecnologias modernas, sempre buscando aprender e evoluir como desenvolvedor.
-
----
-
 ## 🚀 Tecnologias
 
 [![My Skills](https://skillicons.dev/icons?i=postgres,docker,git,linux,firebase&perline=6)](https://skillicons.dev)
