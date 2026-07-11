@@ -10,7 +10,7 @@ import json
 
 def fetch_github_stats():
     """Fetch GitHub stats from API"""
-    username = "felipebraga"
+    username = "FeeBraga"
     token = os.environ.get('GITHUB_TOKEN')
     
     headers = {
