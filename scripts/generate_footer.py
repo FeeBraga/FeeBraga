@@ -8,32 +8,94 @@ import os
 from datetime import datetime
 
 def generate_footer_svg():
-    """Generate minimalist footer SVG"""
+    """Generate premium footer SVG with Vercel/Microsoft inspired design"""
     
-    current_year = datetime.now().year
-    
-    svg_content = f'''<svg width="800" height="60" viewBox="0 0 800 60" xmlns="http://www.w3.org/2000/svg">
+    svg_content = '''<svg width="900" height="100" viewBox="0 0 900 100" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Background gradient matching header -->
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0D1117"/>
       <stop offset="100%" style="stop-color:#161B22"/>
     </linearGradient>
+    
+    <!-- Line gradient for technical details -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58A6FF;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#58A6FF;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#58A6FF;stop-opacity:0"/>
+    </linearGradient>
+    
+    <!-- Subtle glow effect -->
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
   </defs>
   
-  <!-- Background -->
-  <rect width="800" height="60" fill="url(#footerGradient)"/>
+  <!-- Background with rounded corners -->
+  <rect width="900" height="100" fill="url(#footerBg)" rx="12"/>
   
-  <!-- Divider line -->
-  <line x1="0" y1="0" x2="800" y2="0" stroke="#30363D" stroke-width="1"/>
+  <!-- Top divider line -->
+  <line x1="20" y1="1" x2="880" y2="1" stroke="#30363D" stroke-width="1" opacity="0.5"/>
   
-  <!-- Text -->
-  <text x="400" y="35" text-anchor="middle" fill="#484F58" font-family="system-ui, -apple-system, sans-serif" font-size="11">© {current_year} Felipe Braga</text>
+  <!-- Technical circuit details - subtle background pattern -->
+  <g stroke="url(#lineGradient)" stroke-width="0.5" fill="none" opacity="0.3">
+    <!-- Left side circuit -->
+    <path d="M20 50 L80 50 L90 40 L120 40 L130 50"/>
+    <circle cx="90" cy="40" r="1.5" fill="#58A6FF" opacity="0.4"/>
+    <circle cx="130" cy="50" r="1.5" fill="#58A6FF" opacity="0.4"/>
+    
+    <!-- Right side circuit -->
+    <path d="M880 50 L820 50 L810 40 L780 40 L770 50"/>
+    <circle cx="810" cy="40" r="1.5" fill="#58A6FF" opacity="0.4"/>
+    <circle cx="770" cy="50" r="1.5" fill="#58A6FF" opacity="0.4"/>
+    
+    <!-- Bottom subtle lines -->
+    <path d="M100 85 L200 85"/>
+    <path d="M700 85 L800 85"/>
+  </g>
   
-  <!-- Corner accents -->
-  <rect x="0" y="58" width="60" height="2" fill="#58A6FF" opacity="0.2"/>
-  <rect x="0" y="0" width="2" height="60" fill="#58A6FF" opacity="0.2"/>
-  <rect x="740" y="58" width="60" height="2" fill="#58A6FF" opacity="0.2"/>
-  <rect x="798" y="0" width="2" height="60" fill="#58A6FF" opacity="0.2"/>
+  <!-- Corner accents matching header style -->
+  <g opacity="0.25">
+    <!-- Top left -->
+    <rect x="20" y="1" width="40" height="1.5" fill="#58A6FF"/>
+    <rect x="20" y="1" width="1.5" height="40" fill="#58A6FF"/>
+    
+    <!-- Top right -->
+    <rect x="840" y="1" width="40" height="1.5" fill="#58A6FF"/>
+    <rect x="878.5" y="1" width="1.5" height="40" fill="#58A6FF"/>
+    
+    <!-- Bottom left -->
+    <rect x="20" y="97.5" width="40" height="1.5" fill="#58A6FF"/>
+    <rect x="20" y="60" width="1.5" height="40" fill="#58A6FF"/>
+    
+    <!-- Bottom right -->
+    <rect x="840" y="97.5" width="40" height="1.5" fill="#58A6FF"/>
+    <rect x="878.5" y="60" width="1.5" height="40" fill="#58A6FF"/>
+  </g>
+  
+  <!-- Main text content - centered -->
+  <g font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">
+    
+    <!-- Name - highlighted -->
+    <text x="450" y="42" fill="#C9D1D9" font-size="18" font-weight="300" letter-spacing="1">Felipe Braga</text>
+    
+    <!-- Role - smaller -->
+    <text x="450" y="62" fill="#58A6FF" font-size="11" font-weight="400" letter-spacing="0.5">Full Stack Developer • Computer Engineering Student</text>
+    
+    <!-- Tagline - smallest -->
+    <text x="450" y="80" fill="#8B949E" font-size="10" font-style="italic" letter-spacing="0.3">Building intelligent solutions with modern technologies</text>
+  </g>
+  
+  <!-- Subtle decorative dots -->
+  <g fill="#58A6FF" opacity="0.15">
+    <circle cx="450" cy="88" r="1"/>
+    <circle cx="440" cy="88" r="0.8"/>
+    <circle cx="460" cy="88" r="0.8"/>
+  </g>
+  
+  <!-- Border -->
+  <rect width="900" height="100" fill="none" stroke="#30363D" stroke-width="1" rx="12" opacity="0.3"/>
 </svg>'''
     
     # Ensure profile directory exists
