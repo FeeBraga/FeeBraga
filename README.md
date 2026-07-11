@@ -12,14 +12,10 @@
 
 <div align="center">
 
-[![Portfólio](https://img.shields.io/badge/Portfólio-58A6FF?style=for-the-badge)](https://SEU-PORTFOLIO)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=for-the-badge&logo=linkedin&logoColor=white)](https://SEU-LINKEDIN)
-
-[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/FeeBraga)
-
-[![E-mail](https://img.shields.io/badge/E--mail-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:SEUEMAIL)
-
+[![Portfolio](https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik0yIDhoMjB2MjBIMnoiLz48cGF0aCBkPSJNMiA5aDIwIi8+PHBhdGggZD0iTTEyIDl2MTEiLz48cGF0aCBkPSJNMTIgOWwtNSA1Ii8+PHBhdGggZD0iTTEyIDlsNSA1Ii8+PC9zdmc+)](https://felipebraga.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-58A6FF?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/felipebraga)
+[![GitHub](https://img.shields.io/badge/GitHub-58A6FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/felipebraga)
+[![Email](https://img.shields.io/badge/Email-58A6FF?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contato@felipebraga.dev)
 </div>
 
 ---
