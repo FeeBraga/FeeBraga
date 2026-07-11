@@ -6,7 +6,6 @@
 
 <div align="center">
 
-# Felipe Braga
 
 <p><em id="typing">Building intelligent solutions with modern technologies</em></p>
 
