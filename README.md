@@ -46,13 +46,6 @@ Computer Engineering student focused on Full Stack Development and Artificial In
 
 </div>
 
----
-
-<div align="center">
-
-<img src="profile/activity.svg" alt="Activity" width="400">
-
-</div>
 
 ---
 
