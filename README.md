@@ -1,7 +1,7 @@
 <div align="center">
 
-<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="500">
-<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="500">
+<img src="profile/stats.svg" alt="Estatísticas do GitHub" width="400">
+<img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="400">
 
 </div>
 
