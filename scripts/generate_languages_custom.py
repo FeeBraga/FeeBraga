@@ -51,7 +51,6 @@ LANGUAGE_ABBR = {
     "Jupyter Notebook": "Ip",
 }
 
-
 def fetch_language_stats() -> list[tuple[str, int]]:
     token = os.environ.get("GITHUB_TOKEN")
 
@@ -66,26 +65,26 @@ def fetch_language_stats() -> list[tuple[str, int]]:
         all_repos = []
 
         while True:
-    repos_response = requests.get(
-        f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}",
-        headers=headers,
-        timeout=20,
-    )
+            repos_response = requests.get(
+                f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}",
+                headers=headers,
+                timeout=20,
+            )
 
-    repos_response.raise_for_status()
-    repos_data = repos_response.json()
+            repos_response.raise_for_status()
+            repos_data = repos_response.json()
 
-    if not repos_data:
-        break
+            if not repos_data:
+                break
 
-    all_repos.extend(repos_data)
-    page += 1
+            all_repos.extend(repos_data)
+            page += 1
 
-    # Limitar a 300 repositórios para evitar excesso de requisições
-    if len(all_repos) >= 300:
-        break
+            # Limita a 300 repositórios
+            if len(all_repos) >= 300:
+                break
 
-        # AQUI COMEÇA O BLOCO
+        # Calcula pelos bytes reais de cada linguagem
         language_bytes = Counter()
 
         for repo in all_repos:
@@ -93,6 +92,7 @@ def fetch_language_stats() -> list[tuple[str, int]]:
             if not isinstance(repo, dict):
                 continue
 
+            # Ignora forks, templates, arquivados e vazios
             if (
                 repo.get("fork")
                 or repo.get("archived")
