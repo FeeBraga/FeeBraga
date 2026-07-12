@@ -8,15 +8,7 @@
 
 <br />
 
-
-
-## Sobre
-
-- Desenvolvimento de soluções web com foco em organização, legibilidade e consistência visual.
-- Experiência com back-end em `Python` e `.NET`, além de interfaces em `React` e `TypeScript`.
-- Interesse em produtos bem acabados, arquitetura prática e automações que simplificam o fluxo de trabalho.
-
-## Linguagens e tecnologias
+<br>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=python,fastapi,dotnet,react,typescript,postgres,docker,git,linux,firebase&theme=dark&perline=10" alt="Tecnologias principais" />
