@@ -53,86 +53,93 @@ LANGUAGE_ABBR = {
 
 
 def fetch_language_stats() -> list[tuple[str, int]]:
-    """Busca estatísticas de linguagens via API do GitHub."""
     token = os.environ.get("GITHUB_TOKEN")
 
     headers = {
         "Authorization": f"token {token}" if token else None,
         "Accept": "application/vnd.github.v3+json",
     }
-    headers = {key: value for key, value in headers.items() if value is not None}
+    headers = {k: v for k, v in headers.items() if v is not None}
 
     try:
-        # Buscar repositórios com paginação
         page = 1
         all_repos = []
-        
+
         while True:
-            repos_response = requests.get(
-                f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}",
-                headers=headers,
-                timeout=20,
-            )
-            repos_response.raise_for_status()
-            repos_data = repos_response.json()
-            
-            if not repos_data:
-                break
-                
-            all_repos.extend(repos_data)
-            page += 1
-            
-            # Limitar a 300 repositórios para evitar excesso de requisições
-            if len(all_repos) >= 300:
-                break
+    repos_response = requests.get(
+        f"https://api.github.com/users/{USERNAME}/repos?per_page=100&page={page}",
+        headers=headers,
+        timeout=20,
+    )
 
-        # Contar linguagens por bytes de código (mais preciso que por contagem)
-     # Contar bytes reais de cada linguagem
-language_bytes = Counter()
+    repos_response.raise_for_status()
+    repos_data = repos_response.json()
 
-for repo in all_repos:
+    if not repos_data:
+        break
 
-    if not isinstance(repo, dict):
-        continue
+    all_repos.extend(repos_data)
+    page += 1
 
-    # Ignorar forks, templates, arquivados e repositórios vazios
-    if (
-        repo.get("fork")
-        or repo.get("archived")
-        or repo.get("is_template")
-        or repo.get("size", 0) == 0
-    ):
-        continue
+    # Limitar a 300 repositórios para evitar excesso de requisições
+    if len(all_repos) >= 300:
+        break
 
-    try:
-        languages_response = requests.get(
-            repo["languages_url"],
-            headers=headers,
-            timeout=20,
-        )
+        # AQUI COMEÇA O BLOCO
+        language_bytes = Counter()
 
-        languages_response.raise_for_status()
+        for repo in all_repos:
 
-        languages = languages_response.json()
+            if not isinstance(repo, dict):
+                continue
 
-        for language, bytes_code in languages.items():
-            language_bytes[language] += bytes_code
+            if (
+                repo.get("fork")
+                or repo.get("archived")
+                or repo.get("is_template")
+                or repo.get("size", 0) == 0
+            ):
+                continue
+
+            try:
+                languages_response = requests.get(
+                    repo["languages_url"],
+                    headers=headers,
+                    timeout=20,
+                )
+
+                languages_response.raise_for_status()
+
+                languages = languages_response.json()
+
+                for language, bytes_code in languages.items():
+                    language_bytes[language] += bytes_code
+
+            except Exception as error:
+                print(f"Erro em {repo['name']}: {error}")
+
+        if not language_bytes:
+            return [
+                ("Python", 1),
+                ("TypeScript", 1),
+                ("C#", 1),
+                ("JavaScript", 1),
+                ("HTML", 1),
+                ("CSS", 1),
+            ]
+
+        return language_bytes.most_common(6)
 
     except Exception as error:
-        print(f"Erro em {repo['name']}: {error}")
-
-if not language_bytes:
-    return [
-        ("Python", 1),
-        ("TypeScript", 1),
-        ("C#", 1),
-        ("JavaScript", 1),
-        ("HTML", 1),
-        ("CSS", 1),
-    ]
-
-return language_bytes.most_common(6)
-
+        print(f"Error fetching language stats: {error}")
+        return [
+            ("Python", 1),
+            ("TypeScript", 1),
+            ("C#", 1),
+            ("JavaScript", 1),
+            ("HTML", 1),
+            ("CSS", 1),
+        ]
 
 def get_language_color(language: str) -> str:
     """Retorna a cor da linguagem ou uma cor padrão."""
