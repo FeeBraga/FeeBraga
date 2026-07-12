@@ -24,35 +24,76 @@ PILL_MAP = {
 }
 
 
-def fetch_language_stats() -> list[tuple[str, int]]:
-    username = "FeeBraga"
+from collections import Counter
+import os
+import requests
+
+USERNAME = "FeeBraga"
+
+
+def fetch_language_stats():
     token = os.environ.get("GITHUB_TOKEN")
 
     headers = {
-        "Authorization": f"token {token}" if token else None,
-        "Accept": "application/vnd.github.v3+json",
+        "Accept": "application/vnd.github+json"
     }
-    headers = {key: value for key, value in headers.items() if value is not None}
 
-    try:
-        repos_response = requests.get(
-            f"https://api.github.com/users/{username}/repos?per_page=100",
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    language_bytes = Counter()
+
+    page = 1
+
+    while True:
+        repos = requests.get(
+            f"https://api.github.com/users/{USERNAME}/repos",
             headers=headers,
-            timeout=20,
+            params={
+                "per_page": 100,
+                "page": page,
+                "sort": "updated"
+            },
+            timeout=30,
         )
-        repos_response.raise_for_status()
-        repos_data = repos_response.json()
 
-        language_counter = Counter()
-        for repo in repos_data:
-            if isinstance(repo, dict) and repo.get("language"):
-                language_counter[repo["language"]] += 1
+        repos.raise_for_status()
 
-        top_languages = language_counter.most_common(5)
-        return top_languages or [("Python", 1), ("TypeScript", 1), ("C#", 1), ("JavaScript", 1), ("Other", 1)]
-    except Exception as error:
-        print(f"Error fetching language stats: {error}")
-        return [("Python", 1), ("TypeScript", 1), ("C#", 1), ("JavaScript", 1), ("Other", 1)]
+        repos = repos.json()
+
+        if not repos:
+            break
+
+        for repo in repos:
+
+            # ignora forks
+            if repo["fork"]:
+                continue
+
+            languages = requests.get(
+                repo["languages_url"],
+                headers=headers,
+                timeout=30,
+            )
+
+            languages.raise_for_status()
+
+            for lang, bytes_code in languages.json().items():
+                language_bytes[lang] += bytes_code
+
+        page += 1
+
+    if not language_bytes:
+        return [
+            ("C#",1),
+            ("TypeScript",1),
+            ("Python",1),
+            ("HTML",1),
+            ("CSS",1),
+            ("JavaScript",1),
+        ]
+
+    return language_bytes.most_common(6)
 
 
 def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
