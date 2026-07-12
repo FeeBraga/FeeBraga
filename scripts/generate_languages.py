@@ -37,69 +37,98 @@ IGNORE_LANGUAGES = {
 def fetch_language_stats():
     """Busca estatísticas reais das linguagens usando a API /languages."""
 
-    token = os.environ.get("GITHUB_TOKEN")
+    try:
+        token = os.environ.get("GITHUB_TOKEN")
 
-    headers = {
-        "Accept": "application/vnd.github+json",
-    }
+        headers = {
+            "Accept": "application/vnd.github+json",
+        }
 
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
+        if token:
+            headers["Authorization"] = f"Bearer {token}"
 
-    language_bytes = Counter()
+        language_bytes = Counter()
 
-    page = 1
+        page = 1
+        repo_count = 0
 
-    while True:
-        repos_response = requests.get(
-            f"https://api.github.com/users/{USERNAME}/repos",
-            headers=headers,
-            params={
-                "per_page": 100,
-                "page": page,
-                "sort": "updated",
-            },
-            timeout=30,
-        )
-
-        repos_response.raise_for_status()
-
-        repos = repos_response.json()
-
-        if not repos:
-            break
-
-        for repo in repos:
-
-            # Ignorar repositórios que não representam código do usuário
-            if (
-                repo["fork"]
-                or repo["archived"]
-                or repo["is_template"]
-                or repo["size"] == 0
-            ):
-                continue
-
-            languages_response = requests.get(
-                repo["languages_url"],
+        while True:
+            repos_response = requests.get(
+                f"https://api.github.com/users/{USERNAME}/repos",
                 headers=headers,
+                params={
+                    "per_page": 100,
+                    "page": page,
+                    "sort": "updated",
+                },
                 timeout=30,
             )
 
-            languages_response.raise_for_status()
+            repos_response.raise_for_status()
 
-            languages = languages_response.json()
+            repos = repos_response.json()
 
-            for language, bytes_code in languages.items():
+            if not repos:
+                break
 
-                if language in IGNORE_LANGUAGES:
+            for repo in repos:
+
+                # Ignorar repositórios que não representam código do usuário
+                if (
+                    repo["fork"]
+                    or repo["archived"]
+                    or repo["is_template"]
+                    or repo["size"] == 0
+                ):
                     continue
 
-                language_bytes[language] += bytes_code
+                try:
+                    languages_response = requests.get(
+                        repo["languages_url"],
+                        headers=headers,
+                        timeout=30,
+                    )
 
-        page += 1
+                    languages_response.raise_for_status()
 
-    if not language_bytes:
+                    languages = languages_response.json()
+
+                    for language, bytes_code in languages.items():
+
+                        if language in IGNORE_LANGUAGES:
+                            continue
+
+                        language_bytes[language] += bytes_code
+
+                except Exception as error:
+                    print(f"Erro em {repo['name']}: {error}")
+
+                repo_count += 1
+
+                # Limita a 300 repositórios
+                if repo_count >= 300:
+                    break
+
+            page += 1
+
+            # Limita a 300 repositórios
+            if repo_count >= 300:
+                break
+
+        if not language_bytes:
+            return [
+                ("C#", 1),
+                ("TypeScript", 1),
+                ("Python", 1),
+                ("HTML", 1),
+                ("CSS", 1),
+                ("JavaScript", 1),
+            ]
+
+        return language_bytes.most_common(6)
+
+    except Exception as error:
+        print(f"Error fetching language stats: {error}")
         return [
             ("C#", 1),
             ("TypeScript", 1),
@@ -108,8 +137,6 @@ def fetch_language_stats():
             ("CSS", 1),
             ("JavaScript", 1),
         ]
-
-    return language_bytes.most_common(6)
 
 
 def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
