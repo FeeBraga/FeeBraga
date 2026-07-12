@@ -222,17 +222,17 @@
   <!-- Name with Fade In -->
   <text x="600" y="130" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="48" font-weight="700" fill="#F0F6FC" filter="url(#softGlow)">
     <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze" />
-    Felipe Braga
+  Olá, fique a vontade :)
   </text>
 
   <!-- Subtitle with Fade In -->
   <text x="600" y="175" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="400" fill="#8B949E">
     <animate attributeName="opacity" values="0;1" dur="2.5s" fill="freeze" />
-    Full Stack Developer
+    Felipe Braga
   </text>
   <text x="600" y="200" text-anchor="middle" font-family="'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="400" fill="#8B949E">
     <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze" />
-    Computer Engineering Student
+    Engenharia da computação :3
   </text>
 
   <!-- Decorative Lines Near Text -->
