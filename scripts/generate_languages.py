@@ -10,6 +10,8 @@ import requests
 
 from profile_theme import build_card_svg, safe_pill
 
+USERNAME = "FeeBraga"
+
 PILL_MAP = {
     "Python": "PY",
     "JavaScript": "JS",
@@ -23,19 +25,22 @@ PILL_MAP = {
     "Java": "JAVA",
 }
 
-
-from collections import Counter
-import os
-import requests
-
-USERNAME = "FeeBraga"
+# Linguagens que normalmente não fazem sentido exibir
+IGNORE_LANGUAGES = {
+    "Dockerfile",
+    "Batchfile",
+    "ShaderLab",
+    "GLSL",
+}
 
 
 def fetch_language_stats():
+    """Busca estatísticas reais das linguagens usando a API /languages."""
+
     token = os.environ.get("GITHUB_TOKEN")
 
     headers = {
-        "Accept": "application/vnd.github+json"
+        "Accept": "application/vnd.github+json",
     }
 
     if token:
@@ -46,51 +51,62 @@ def fetch_language_stats():
     page = 1
 
     while True:
-        repos = requests.get(
+        repos_response = requests.get(
             f"https://api.github.com/users/{USERNAME}/repos",
             headers=headers,
             params={
                 "per_page": 100,
                 "page": page,
-                "sort": "updated"
+                "sort": "updated",
             },
             timeout=30,
         )
 
-        repos.raise_for_status()
+        repos_response.raise_for_status()
 
-        repos = repos.json()
+        repos = repos_response.json()
 
         if not repos:
             break
 
         for repo in repos:
 
-            # ignora forks
-            if repo["fork"]:
+            # Ignorar repositórios que não representam código do usuário
+            if (
+                repo["fork"]
+                or repo["archived"]
+                or repo["is_template"]
+                or repo["size"] == 0
+            ):
                 continue
 
-            languages = requests.get(
+            languages_response = requests.get(
                 repo["languages_url"],
                 headers=headers,
                 timeout=30,
             )
 
-            languages.raise_for_status()
+            languages_response.raise_for_status()
 
-            for lang, bytes_code in languages.json().items():
-                language_bytes[lang] += bytes_code
+            languages = languages_response.json()
+
+            for language, bytes_code in languages.items():
+
+                if language in IGNORE_LANGUAGES:
+                    continue
+
+                language_bytes[language] += bytes_code
 
         page += 1
 
     if not language_bytes:
         return [
-            ("C#",1),
-            ("TypeScript",1),
-            ("Python",1),
-            ("HTML",1),
-            ("CSS",1),
-            ("JavaScript",1),
+            ("C#", 1),
+            ("TypeScript", 1),
+            ("Python", 1),
+            ("HTML", 1),
+            ("CSS", 1),
+            ("JavaScript", 1),
         ]
 
     return language_bytes.most_common(6)
@@ -98,6 +114,7 @@ def fetch_language_stats():
 
 def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
     total = sum(count for _, count in languages) or 1
+
     rows = [
         {
             "pill": PILL_MAP.get(language, safe_pill(language)),
@@ -115,6 +132,7 @@ def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
     )
 
     os.makedirs("profile", exist_ok=True)
+
     with open("profile/languages.svg", "w", encoding="utf-8") as file:
         file.write(svg_content)
 
