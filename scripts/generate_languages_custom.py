@@ -87,31 +87,51 @@ def fetch_language_stats() -> list[tuple[str, int]]:
                 break
 
         # Contar linguagens por bytes de código (mais preciso que por contagem)
-        language_bytes = Counter()
-        
-        for repo in all_repos:
-            if isinstance(repo, dict):
-                # Se o repositório tiver linguagem definida
-                if repo.get("language"):
-                    language = repo["language"]
-                    # Usar tamanho do repositório como peso aproximado
-                    size = repo.get("size", 1)
-                    language_bytes[language] += size
+     # Contar bytes reais de cada linguagem
+language_bytes = Counter()
 
-        # Se não houver dados, usar contagem simples
-        if not language_bytes:
-            language_counter = Counter()
-            for repo in all_repos:
-                if isinstance(repo, dict) and repo.get("language"):
-                    language_counter[repo["language"]] += 1
-            top_languages = language_counter.most_common(6)
-        else:
-            top_languages = language_bytes.most_common(6)
+for repo in all_repos:
 
-        return top_languages or [("Python", 1), ("TypeScript", 1), ("C#", 1), ("JavaScript", 1), ("HTML", 1), ("CSS", 1)]
+    if not isinstance(repo, dict):
+        continue
+
+    # Ignorar forks, templates, arquivados e repositórios vazios
+    if (
+        repo.get("fork")
+        or repo.get("archived")
+        or repo.get("is_template")
+        or repo.get("size", 0) == 0
+    ):
+        continue
+
+    try:
+        languages_response = requests.get(
+            repo["languages_url"],
+            headers=headers,
+            timeout=20,
+        )
+
+        languages_response.raise_for_status()
+
+        languages = languages_response.json()
+
+        for language, bytes_code in languages.items():
+            language_bytes[language] += bytes_code
+
     except Exception as error:
-        print(f"Error fetching language stats: {error}")
-        return [("Python", 1), ("TypeScript", 1), ("C#", 1), ("JavaScript", 1), ("HTML", 1), ("CSS", 1)]
+        print(f"Erro em {repo['name']}: {error}")
+
+if not language_bytes:
+    return [
+        ("Python", 1),
+        ("TypeScript", 1),
+        ("C#", 1),
+        ("JavaScript", 1),
+        ("HTML", 1),
+        ("CSS", 1),
+    ]
+
+return language_bytes.most_common(6)
 
 
 def get_language_color(language: str) -> str:
