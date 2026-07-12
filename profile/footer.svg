@@ -297,4 +297,57 @@
       <animate attributeName="opacity" values="0;0.3" dur="3s" fill="freeze" />
     </path>
   </g>
+
+   <g transform="translate(1098 248)" shape-rendering="crispEdges" opacity="0.64">
+    <g transform="translate(0 14)">
+      <animateTransform attributeName="transform" type="rotate" values="0 4 6;10 4 6;0 4 6;-6 4 6;0 4 6" dur="7s" repeatCount="indefinite" />
+      <rect x="0" y="8" width="4" height="4" fill="#30363D" />
+      <rect x="4" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="8" y="0" width="4" height="4" fill="#30363D" />
+      <rect x="8" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="8" y="8" width="4" height="4" fill="#30363D" />
+    </g>
+    <g>
+      <rect x="12" y="0" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="0" width="4" height="4" fill="#30363D" />
+      <rect x="8" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="12" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="16" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="20" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="28" y="4" width="4" height="4" fill="#30363D" />
+      <rect x="8" y="8" width="4" height="4" fill="#30363D" />
+      <rect x="12" y="8" width="4" height="4" fill="#30363D" />
+      <rect x="16" y="8" width="4" height="4" fill="#30363D" />
+      <rect x="20" y="8" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="8" width="4" height="4" fill="#30363D" />
+      <rect x="28" y="8" width="4" height="4" fill="#30363D" />
+      <rect x="8" y="12" width="4" height="4" fill="#30363D" />
+      <rect x="12" y="12" width="4" height="4" fill="#30363D" />
+      <rect x="16" y="12" width="4" height="4" fill="#30363D" />
+      <rect x="20" y="12" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="12" width="4" height="4" fill="#30363D" />
+      <rect x="28" y="12" width="4" height="4" fill="#30363D" />
+      <rect x="12" y="16" width="4" height="4" fill="#30363D" />
+      <rect x="16" y="16" width="4" height="4" fill="#30363D" />
+      <rect x="20" y="16" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="16" width="4" height="4" fill="#30363D" />
+      <rect x="12" y="20" width="4" height="4" fill="#30363D" />
+      <rect x="16" y="20" width="4" height="4" fill="#30363D" />
+      <rect x="20" y="20" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="20" width="4" height="4" fill="#30363D" />
+      <rect x="12" y="24" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="24" width="4" height="4" fill="#30363D" />
+      <rect x="12" y="28" width="4" height="4" fill="#30363D" />
+      <rect x="24" y="28" width="4" height="4" fill="#30363D" />
+    </g>
+    <g fill="#F0F6FC">
+      <rect x="16" y="12" width="4" height="4">
+        <animate attributeName="opacity" values="1;1;1;0;1;1" dur="6.5s" repeatCount="indefinite" />
+      </rect>
+      <rect x="24" y="12" width="4" height="4">
+        <animate attributeName="opacity" values="1;1;1;0;1;1" dur="6.5s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
 </svg>
