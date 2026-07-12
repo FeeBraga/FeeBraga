@@ -1,7 +1,7 @@
 <h3>  Olá, fiquem a vontade :) </h3>
 <div align="center">
-  <img src="profile/stats.svg" alt="Estatísticas do GitHub" width="420" />
-  <img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="350" />
+  <img src="profile/stats.svg" alt="Estatísticas do GitHub" width="470" />
+  <img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="380" />
 </div>
 
 <br />
