@@ -66,17 +66,12 @@
 
   <!-- Card 1: Total Repositories -->
   <g transform="translate(60, 100)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="1.5s" fill="freeze" />
     </circle>
-    
-    <!-- Repository Icon -->
     <g transform="translate(30, 30)">
       <path d="M 15 0 L 15 30 L 0 30 L 0 0 Z" fill="none" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <animate attributeName="opacity" values="0;1" dur="1.5s" fill="freeze" />
@@ -91,75 +86,53 @@
         <animate attributeName="opacity" values="0;1" dur="2.2s" fill="freeze" />
       </path>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze" />
       Repositories
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="2.5s" fill="freeze" />
-      42
+      15
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;120" dur="2s" fill="freeze" begin="1s" />
+      <animate attributeName="width" values="0;36" dur="2s" fill="freeze" begin="1s" />
     </rect>
   </g>
 
   <!-- Card 2: Total Stars -->
   <g transform="translate(340, 100)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="1.2s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="1.7s" fill="freeze" />
     </circle>
-    
-    <!-- Star Icon -->
     <g transform="translate(30, 30)">
       <polygon points="15,2 18,12 29,12 20,19 23,29 15,23 7,29 10,19 1,12 12,12" fill="none" stroke="#58A6FF" stroke-width="2" stroke-linejoin="round">
         <animate attributeName="opacity" values="0;1" dur="1.7s" fill="freeze" />
       </polygon>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="2.2s" fill="freeze" />
       Total Stars
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="2.7s" fill="freeze" />
-      128
+      2
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;100" dur="2s" fill="freeze" begin="1.2s" />
+      <animate attributeName="width" values="0;2" dur="2s" fill="freeze" begin="1.2s" />
     </rect>
   </g>
 
   <!-- Card 3: Total Forks -->
   <g transform="translate(620, 100)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="1.4s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="1.9s" fill="freeze" />
     </circle>
-    
-    <!-- Fork Icon -->
     <g transform="translate(30, 30)">
       <path d="M 15 2 L 15 10" stroke="#58A6FF" stroke-width="2" stroke-linecap="round">
         <animate attributeName="opacity" values="0;1" dur="1.9s" fill="freeze" />
@@ -180,38 +153,27 @@
         <animate attributeName="opacity" values="0;1" dur="2.4s" fill="freeze" />
       </circle>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="2.4s" fill="freeze" />
       Total Forks
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="2.9s" fill="freeze" />
-      56
+      0
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;80" dur="2s" fill="freeze" begin="1.4s" />
+      <animate attributeName="width" values="0;0" dur="2s" fill="freeze" begin="1.4s" />
     </rect>
   </g>
 
   <!-- Card 4: Followers -->
   <g transform="translate(900, 100)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="1.6s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="2.1s" fill="freeze" />
     </circle>
-    
-    <!-- User Icon -->
     <g transform="translate(30, 30)">
       <circle cx="15" cy="10" r="6" fill="none" stroke="#58A6FF" stroke-width="2">
         <animate attributeName="opacity" values="0;1" dur="2.1s" fill="freeze" />
@@ -220,38 +182,27 @@
         <animate attributeName="opacity" values="0;1" dur="2.2s" fill="freeze" />
       </path>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="2.6s" fill="freeze" />
       Followers
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="3.1s" fill="freeze" />
-      89
+      3
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;90" dur="2s" fill="freeze" begin="1.6s" />
+      <animate attributeName="width" values="0;5" dur="2s" fill="freeze" begin="1.6s" />
     </rect>
   </g>
 
   <!-- Card 5: Commits -->
   <g transform="translate(60, 250)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="1.8s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="2.3s" fill="freeze" />
     </circle>
-    
-    <!-- Commit Icon -->
     <g transform="translate(30, 30)">
       <circle cx="8" cy="15" r="3" fill="none" stroke="#58A6FF" stroke-width="2">
         <animate attributeName="opacity" values="0;1" dur="2.3s" fill="freeze" />
@@ -263,38 +214,27 @@
         <animate attributeName="opacity" values="0;1" dur="2.5s" fill="freeze" />
       </line>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="2.8s" fill="freeze" />
       Commits
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="3.3s" fill="freeze" />
-      1,247
+      0
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;140" dur="2s" fill="freeze" begin="1.8s" />
+      <animate attributeName="width" values="0;0" dur="2s" fill="freeze" begin="1.8s" />
     </rect>
   </g>
 
   <!-- Card 6: Pull Requests -->
   <g transform="translate(340, 250)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="2s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="2.5s" fill="freeze" />
     </circle>
-    
-    <!-- PR Icon -->
     <g transform="translate(30, 30)">
       <path d="M 5 15 L 10 10 L 15 15" fill="none" stroke="#58A6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <animate attributeName="opacity" values="0;1" dur="2.5s" fill="freeze" />
@@ -309,38 +249,27 @@
         <animate attributeName="opacity" values="0;1" dur="2.8s" fill="freeze" />
       </path>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="3s" fill="freeze" />
       Pull Requests
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="3.5s" fill="freeze" />
-      73
+      0
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;110" dur="2s" fill="freeze" begin="2s" />
+      <animate attributeName="width" values="0;0" dur="2s" fill="freeze" begin="2s" />
     </rect>
   </g>
 
   <!-- Card 7: Issues -->
   <g transform="translate(620, 250)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="2.2s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="2.7s" fill="freeze" />
     </circle>
-    
-    <!-- Issue Icon -->
     <g transform="translate(30, 30)">
       <circle cx="15" cy="15" r="10" fill="none" stroke="#58A6FF" stroke-width="2">
         <animate attributeName="opacity" values="0;1" dur="2.7s" fill="freeze" />
@@ -352,38 +281,27 @@
         <animate attributeName="opacity" values="0;1" dur="2.9s" fill="freeze" />
       </line>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="3.2s" fill="freeze" />
       Issues
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="3.7s" fill="freeze" />
-      34
+      0
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;70" dur="2s" fill="freeze" begin="2.2s" />
+      <animate attributeName="width" values="0;0" dur="2s" fill="freeze" begin="2.2s" />
     </rect>
   </g>
 
   <!-- Card 8: Contributions -->
   <g transform="translate(900, 250)">
-    <!-- Card Background -->
     <rect width="250" height="120" rx="12" fill="url(#cardGradient)" stroke="#30363D" stroke-width="1" filter="url(#cardShadow)">
       <animate attributeName="opacity" values="0;1" dur="2.4s" fill="freeze" />
     </rect>
-    
-    <!-- Icon Background -->
     <circle cx="45" cy="45" r="25" fill="url(#iconGlow)" opacity="0.5">
       <animate attributeName="opacity" values="0;0.5" dur="2.9s" fill="freeze" />
     </circle>
-    
-    <!-- Contribution Icon -->
     <g transform="translate(30, 30)">
       <rect x="2" y="18" width="4" height="10" rx="1" fill="#58A6FF" opacity="0.4">
         <animate attributeName="opacity" values="0;1" dur="2.9s" fill="freeze" />
@@ -398,22 +316,16 @@
         <animate attributeName="opacity" values="0;1" dur="3.2s" fill="freeze" />
       </rect>
     </g>
-    
-    <!-- Label -->
     <text x="85" y="40" font-family="'Segoe UI', system-ui, sans-serif" font-size="14" fill="#8B949E">
       <animate attributeName="opacity" values="0;1" dur="3.4s" fill="freeze" />
       Contributions
     </text>
-    
-    <!-- Number -->
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="3.9s" fill="freeze" />
-      2,891
+      15
     </text>
-    
-    <!-- Small Bar -->
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;150" dur="2s" fill="freeze" begin="2.4s" />
+      <animate attributeName="width" values="0;2" dur="2s" fill="freeze" begin="2.4s" />
     </rect>
   </g>
 
