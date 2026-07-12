@@ -17,6 +17,7 @@ PILL_MAP = {
     "JavaScript": "JS",
     "TypeScript": "TS",
     "C#": "C#",
+    ".NET": "NET",
     "C++": "C++",
     "HTML": "HTML",
     "CSS": "CSS",
@@ -59,7 +60,7 @@ def fetch_language_stats():
                 params={
                     "per_page": 100,
                     "page": page,
-                    "sort": "updated",
+                    "sort": "size",
                 },
                 timeout=30,
             )
