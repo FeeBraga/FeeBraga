@@ -351,4 +351,9 @@
   <line x1="60" y1="470" x2="1140" y2="470" stroke="#30363D" stroke-width="1" opacity="0.3">
     <animate attributeName="opacity" values="0;0.3" dur="4s" fill="freeze" />
   </line>
+
+  <div align="center">
+  <img src="profile/stats.svg" alt="Estatísticas do GitHub" width="420" />
+  <img src="profile/languages.svg" alt="Linguagens mais utilizadas" width="420" />
+</div>
 </svg>
