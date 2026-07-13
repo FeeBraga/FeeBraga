@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="2100" height="700">
   <defs>
+
+    <clipPath id="roundedCanvas">
+  <rect x="12" y="12" width="1176" height="376" rx="28" ry="28"/>
+</clipPath>
+
+    
     <!-- Background Gradient -->
     <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1" />
@@ -51,22 +57,50 @@
     </pattern>
   </defs>
 
-  <!-- Main Background -->
-  <rect width="1200" height="400" fill="url(#bgGradient)" />
-  <rect width="1200" height="400" fill="url(#gridPattern)" opacity="0.5" />
+<!-- Canvas -->
+<clipPath id="roundedCanvas">
+    <rect x="12" y="12" width="1176" height="376" rx="28" ry="28"/>
+</clipPath>
 
-  <!-- Internal Border -->
-<rect 
-  x="12" 
-  y="12" 
-  width="1176" 
-  height="376" 
-  rx="26" 
-  fill="none" 
-  stroke="#30363D" 
-  stroke-width="2"
-/>
+<!-- Conteúdo recortado -->
+<g clip-path="url(#roundedCanvas)">
 
+    <!-- Background -->
+    <rect width="1200" height="400" fill="#0D1117"/>
+
+    <!-- Gradient -->
+    <rect width="1200" height="400" fill="url(#bgGradient)"/>
+
+    <!-- Grid -->
+    <rect width="1200" height="400"
+          fill="url(#gridPattern)"
+          opacity="0.5"/>
+
+</g>
+
+<!-- Borda externa -->
+<rect
+    x="12"
+    y="12"
+    width="1176"
+    height="376"
+    rx="28"
+    ry="28"
+    fill="none"
+    stroke="#30363D"
+    stroke-width="2"/>
+
+<!-- Borda interna -->
+<rect
+    x="24"
+    y="24"
+    width="1152"
+    height="352"
+    rx="20"
+    ry="20"
+    fill="none"
+    stroke="#21262D"
+    stroke-width="1"/>
   <!-- Title -->
   <text x="60" y="50" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="600" fill="#F0F6FC">
     <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze" />
