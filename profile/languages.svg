@@ -105,7 +105,7 @@
     </g>
   </g>
 
-  <g transform="translate(1100 474)" shape-rendering="crispEdges" opacity="0.72">
+    <g transform="translate(1100 340)" shape-rendering="crispEdges" opacity="0.72">
     <g transform="translate(0 14)">
       <animateTransform attributeName="transform" type="rotate" values="0 4 6;10 4 6;0 4 6;-6 4 6;0 4 6" dur="7s" repeatCount="indefinite" />
       <rect x="0" y="8" width="4" height="4" fill="#30363D" />
