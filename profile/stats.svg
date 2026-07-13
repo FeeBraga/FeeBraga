@@ -55,6 +55,18 @@
   <rect width="1200" height="400" fill="url(#bgGradient)" />
   <rect width="1200" height="400" fill="url(#gridPattern)" opacity="0.5" />
 
+  <!-- Internal Border -->
+<rect 
+  x="12" 
+  y="12" 
+  width="1176" 
+  height="376" 
+  rx="26" 
+  fill="none" 
+  stroke="#30363D" 
+  stroke-width="2"
+/>
+
   <!-- Title -->
   <text x="60" y="50" font-family="'Segoe UI', system-ui, sans-serif" font-size="24" font-weight="600" fill="#F0F6FC">
     <animate attributeName="opacity" values="0;1" dur="1s" fill="freeze" />
