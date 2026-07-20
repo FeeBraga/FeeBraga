@@ -2,42 +2,43 @@ name: Update Profile
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
-  workflow_dispatch:      # Allows manual trigger
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate-profile:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
-        run: |
-          pip install requests
-      
+        run: pip install requests
+
       - name: Generate header SVG
         run: python scripts/generate_header.py
-      
+
       - name: Generate footer SVG
         run: python scripts/generate_footer.py
-      
+
       - name: Generate stats SVG
         run: python scripts/generate_stats_custom.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
+
       - name: Generate languages SVG
         run: python scripts/generate_languages_custom.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 
       - name: Commit changes
         run: |
