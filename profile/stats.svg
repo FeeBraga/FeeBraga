@@ -188,10 +188,10 @@
     </text>
     <text x="85" y="75" font-family="'Segoe UI', system-ui, sans-serif" font-size="32" font-weight="700" fill="#F0F6FC">
       <animate attributeName="opacity" values="0;1" dur="3.1s" fill="freeze" />
-      18
+      23
     </text>
     <rect x="85" y="90" width="0" height="4" rx="2" fill="url(#barGradient)">
-      <animate attributeName="width" values="0;32" dur="2s" fill="freeze" begin="1.6s" />
+      <animate attributeName="width" values="0;41" dur="2s" fill="freeze" begin="1.6s" />
     </rect>
   </g>
 
