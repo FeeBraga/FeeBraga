@@ -44,4 +44,7 @@
   <rect x="100" y="28" width="150" height="1" fill="#00FFFF">
     <animate attributeName="x" values="100;1100;100" dur="4s" repeatCount="indefinite" />
   </rect>
+  
+  <!-- Gatinho discreto -->
+  <text x="1150" y="52" font-family="monospace" font-size="10" fill="#30363D" opacity="0.2">=^..^=</text>
 </svg>

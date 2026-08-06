@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=FeeBraga&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF94&icon_color=FF00FF&text_color=FFFFFF&border_color=FF00FF&hide=prs,issues" alt="GitHub Stats" width="400" height="130" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=FeeBraga&layout=pie&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF94&text_color=FFFFFF&border_color=FF00FF" alt="Top Languages" width="400" height="130" />
+  <img src="profile/stats.svg" alt="GitHub Stats" width="400" height="140" />
+  <img src="profile/languages.svg" alt="Top Languages" width="400" height="140" />
 </div>
 
 ---

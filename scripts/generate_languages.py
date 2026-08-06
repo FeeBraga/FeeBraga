@@ -155,6 +155,9 @@ def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
       <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="1.5s" />
     </rect>
   </g>
+  
+  <!-- Gatinho discreto -->
+  <text x="370" y="20" font-family="monospace" font-size="8" fill="#30363D" opacity="0.2">=^..^=</text>
 </svg>"""
 
     os.makedirs("profile", exist_ok=True)
