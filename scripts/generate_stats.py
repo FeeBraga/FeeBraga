@@ -102,7 +102,6 @@ def generate_stats_svg(stats: dict[str, int]) -> None:
   </rect>
   <text x="45" y="{y + 4}" font-family="monospace" font-size="11" fill="#8B949E">{label}</text>
   <text x="355" y="{y + 4}" font-family="monospace" font-size="11" fill="{color}" text-anchor="end" font-weight="bold">{format_number(value)}</text>
-  <text x="325" y="{y + 4}" font-family="monospace" font-size="8" fill="#30363D" opacity="0.5">0101</text>
 """
         y += 20
 

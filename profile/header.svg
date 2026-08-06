@@ -1,9 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 160" width="1200" height="160">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="scanlines" x="0" y="0" width="1200" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1200" height="1" fill="#000000" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
   <rect width="1200" height="160" fill="#0D1117" />
+  <rect width="1200" height="160" fill="url(#scanlines)" />
   
-  <text x="600" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#00FF94" text-anchor="middle">Felipe Braga</text>
-  <text x="600" y="100" font-family="Arial, sans-serif" font-size="16" fill="#8B949E" text-anchor="middle" letter-spacing="3">FULL STACK DEVELOPER</text>
+  <!-- Corners decorativos -->
+  <rect x="20" y="20" width="15" height="15" fill="none" stroke="#00FF94" stroke-width="1" />
+  <rect x="1165" y="20" width="15" height="15" fill="none" stroke="#00FF94" stroke-width="1" />
+  <rect x="20" y="125" width="15" height="15" fill="none" stroke="#00FF94" stroke-width="1" />
+  <rect x="1165" y="125" width="15" height="15" fill="none" stroke="#00FF94" stroke-width="1" />
   
-  <line x1="100" y1="120" x2="1100" y2="120" stroke="#FF00FF" stroke-width="2" />
-  <line x1="100" y1="120" x2="400" y2="120" stroke="#00FFFF" stroke-width="2" />
+  <text x="600" y="70" font-family="monospace" font-size="48" font-weight="bold" fill="#00FF94" text-anchor="middle" letter-spacing="2" filter="url(#glow)">Felipe Braga</text>
+  <text x="600" y="100" font-family="monospace" font-size="14" fill="#8B949E" text-anchor="middle" letter-spacing="4">FULL_STACK_DEVELOPER</text>
+  
+  <line x1="100" y1="120" x2="1100" y2="120" stroke="#FF00FF" stroke-width="1" opacity="0.5" />
+  <line x1="100" y1="122" x2="1100" y2="122" stroke="#FF00FF" stroke-width="1" opacity="0.3" stroke-dasharray="4 4" />
+  <line x1="100" y1="120" x2="400" y2="120" stroke="#00FFFF" stroke-width="2" filter="url(#glow)" />
+  
+  <!-- Pixels decorativos -->
+  <g opacity="0.4">
+    <rect x="40" y="35" width="3" height="3" fill="#00FF94">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="1157" y="35" width="3" height="3" fill="#00FF94">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="0.7s" />
+    </rect>
+    <rect x="40" y="120" width="3" height="3" fill="#00FFFF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="1.4s" />
+    </rect>
+    <rect x="1157" y="120" width="3" height="3" fill="#00FFFF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="2.1s" />
+    </rect>
+  </g>
 </svg>

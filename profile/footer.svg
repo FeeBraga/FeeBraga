@@ -1,9 +1,47 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="1200" height="60">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="scanlines" x="0" y="0" width="1200" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="1200" height="1" fill="#000000" opacity="0.1"/>
+    </pattern>
+  </defs>
+  
   <rect width="1200" height="60" fill="#0D1117" />
+  <rect width="1200" height="60" fill="url(#scanlines)" />
   
+  <!-- Linhas de dados -->
   <line x1="100" y1="30" x2="1100" y2="30" stroke="#FF00FF" stroke-width="1" opacity="0.5" />
+  <line x1="100" y1="32" x2="1100" y2="32" stroke="#FF00FF" stroke-width="1" opacity="0.3" stroke-dasharray="4 4" />
   
-  <text x="400" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚔️</text>
-  <text x="600" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">📖</text>
-  <text x="800" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚡</text>
+  <!-- Emojis com glow -->
+  <text x="400" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" filter="url(#glow)">⚔️</text>
+  <text x="600" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" filter="url(#glow)">📖</text>
+  <text x="800" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle" filter="url(#glow)">⚡</text>
+  
+  <!-- Pixels decorativos -->
+  <g opacity="0.4">
+    <rect x="50" y="10" width="2" height="2" fill="#FF00FF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" />
+    </rect>
+    <rect x="1150" y="10" width="2" height="2" fill="#FF00FF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="0.5s" />
+    </rect>
+    <rect x="50" y="48" width="2" height="2" fill="#FF00FF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="1s" />
+    </rect>
+    <rect x="1150" y="48" width="2" height="2" fill="#FF00FF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite" begin="1.5s" />
+    </rect>
+  </g>
+  
+  <!-- Linha de dados animada -->
+  <rect x="100" y="28" width="150" height="1" fill="#00FFFF">
+    <animate attributeName="x" values="100;1100;100" dur="4s" repeatCount="indefinite" />
+  </rect>
 </svg>

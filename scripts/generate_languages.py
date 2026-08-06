@@ -130,7 +130,6 @@ def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
   </rect>
   <text x="248" y="{legend_y + 2}" font-family="monospace" font-size="11" fill="#F0F6FC">{language}</text>
   <text x="380" y="{legend_y + 2}" font-family="monospace" font-size="11" fill="#8B949E" text-anchor="end">{percentage:.0f}%</text>
-  <text x="395" y="{legend_y + 2}" font-family="monospace" font-size="8" fill="#30363D" opacity="0.3">1100</text>
 """
         legend_y += 18
     
