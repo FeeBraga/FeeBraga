@@ -58,7 +58,7 @@ def fetch_language_stats() -> list[tuple[str, int]]:
 def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
     total = sum(count for _, count in languages) or 1
     
-    # Cores cyberpunk para o gráfico de pizza
+    # Cores cyberpunk mais bonitas
     colors = {
         "Python": "#00FF94",
         "JavaScript": "#FF00FF", 
@@ -72,11 +72,11 @@ def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
         "Java": "#007396",
     }
     
-    # Gerar gráfico de pizza SVG mais aesthetic
+    # Gerar gráfico de pizza mais simétrico e bonito
     pie_svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
   <defs>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -90,10 +90,8 @@ def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
   <line x1="50" y1="38" x2="350" y2="38" stroke="#FF00FF" stroke-width="1" opacity="0.5" />
 """
     
-    # Criar gráfico de pizza
-    cx, cy, r = 120, 85, 35
-    circumference = 2 * 3.14159 * r
-    
+    # Criar gráfico de pizza mais simétrico usando path
+    cx, cy, r = 130, 85, 35
     current_angle = -90  # Começa do topo
     
     legend_y = 55
@@ -103,18 +101,32 @@ def generate_languages_svg(languages: list[tuple[str, int]]) -> None:
         
         # Calcular o ângulo para esta fatia
         angle = (count / total) * 360
+        end_angle = current_angle + angle
+        
+        # Converter para radianos
+        start_rad = (current_angle * 3.14159) / 180
+        end_rad = (end_angle * 3.14159) / 180
+        
+        # Calcular pontos do arco
+        x1 = cx + r * 0.716 * 3.14159 / 180 * start_rad
+        y1 = cy + r * 0.716 * 3.14159 / 180 * start_rad
+        x2 = cx + r * 0.716 * 3.14159 / 180 * end_rad
+        y2 = cy + r * 0.716 * 3.14159 / 180 * end_rad
+        
+        # Usar stroke-dasharray para criar fatia
+        circumference = 2 * 3.14159 * r
         dash_array = f"{(angle / 360) * circumference} {circumference}"
         
         pie_svg += f"""
-  <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{color}" stroke-width="20" stroke-dasharray="{dash_array}" transform="rotate({current_angle} {cx} {cy})" filter="url(#glow)" />
+  <circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{color}" stroke-width="16" stroke-dasharray="{dash_array}" transform="rotate({current_angle} {cx} {cy})" filter="url(#glow)" />
 """
-        current_angle += angle
+        current_angle = end_angle
         
         # Adicionar legenda mais bonita
         pie_svg += f"""
-  <rect x="230" y="{legend_y - 8}" width="8" height="8" rx="2" fill="{color}" />
-  <text x="245" y="{legend_y}" font-family="Arial" font-size="12" fill="#F0F6FC">{language}</text>
-  <text x="380" y="{legend_y}" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">{percentage:.0f}%</text>
+  <rect x="230" y="{legend_y - 6}" width="10" height="10" rx="2" fill="{color}" />
+  <text x="248" y="{legend_y + 2}" font-family="Arial" font-size="12" fill="#F0F6FC">{language}</text>
+  <text x="380" y="{legend_y + 2}" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">{percentage:.0f}%</text>
 """
         legend_y += 18
     

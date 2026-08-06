@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
   <defs>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
       <feMerge>
         <feMergeNode in="coloredBlur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -14,35 +14,35 @@
   <text x="200" y="28" font-family="Arial" font-size="16" fill="#00FFFF" text-anchor="middle" font-weight="bold" letter-spacing="1">TOP LANGUAGES</text>
   <line x1="50" y1="38" x2="350" y2="38" stroke="#FF00FF" stroke-width="1" opacity="0.5" />
 
-  <circle cx="120" cy="85" r="35" fill="none" stroke="#00FF94" stroke-width="20" stroke-dasharray="67.66501538461539 219.91129999999998" transform="rotate(-90 120 85)" filter="url(#glow)" />
+  <circle cx="130" cy="85" r="35" fill="none" stroke="#00FF94" stroke-width="16" stroke-dasharray="67.66501538461539 219.91129999999998" transform="rotate(-90 130 85)" filter="url(#glow)" />
 
-  <rect x="230" y="47" width="8" height="8" rx="2" fill="#00FF94" />
-  <text x="245" y="55" font-family="Arial" font-size="12" fill="#F0F6FC">Python</text>
-  <text x="380" y="55" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">31%</text>
+  <rect x="230" y="49" width="10" height="10" rx="2" fill="#00FF94" />
+  <text x="248" y="57" font-family="Arial" font-size="12" fill="#F0F6FC">Python</text>
+  <text x="380" y="57" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">31%</text>
 
-  <circle cx="120" cy="85" r="35" fill="none" stroke="#1572B6" stroke-width="20" stroke-dasharray="67.66501538461539 219.91129999999998" transform="rotate(20.769230769230774 120 85)" filter="url(#glow)" />
+  <circle cx="130" cy="85" r="35" fill="none" stroke="#1572B6" stroke-width="16" stroke-dasharray="67.66501538461539 219.91129999999998" transform="rotate(20.769230769230774 130 85)" filter="url(#glow)" />
 
-  <rect x="230" y="65" width="8" height="8" rx="2" fill="#1572B6" />
-  <text x="245" y="73" font-family="Arial" font-size="12" fill="#F0F6FC">CSS</text>
-  <text x="380" y="73" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">31%</text>
+  <rect x="230" y="67" width="10" height="10" rx="2" fill="#1572B6" />
+  <text x="248" y="75" font-family="Arial" font-size="12" fill="#F0F6FC">CSS</text>
+  <text x="380" y="75" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">31%</text>
 
-  <circle cx="120" cy="85" r="35" fill="none" stroke="#FF00FF" stroke-width="20" stroke-dasharray="50.74876153846154 219.91129999999998" transform="rotate(131.53846153846155 120 85)" filter="url(#glow)" />
+  <circle cx="130" cy="85" r="35" fill="none" stroke="#FF00FF" stroke-width="16" stroke-dasharray="50.74876153846154 219.91129999999998" transform="rotate(131.53846153846155 130 85)" filter="url(#glow)" />
 
-  <rect x="230" y="83" width="8" height="8" rx="2" fill="#FF00FF" />
-  <text x="245" y="91" font-family="Arial" font-size="12" fill="#F0F6FC">JavaScript</text>
-  <text x="380" y="91" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">23%</text>
+  <rect x="230" y="85" width="10" height="10" rx="2" fill="#FF00FF" />
+  <text x="248" y="93" font-family="Arial" font-size="12" fill="#F0F6FC">JavaScript</text>
+  <text x="380" y="93" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">23%</text>
 
-  <circle cx="120" cy="85" r="35" fill="none" stroke="#FFD43B" stroke-width="20" stroke-dasharray="16.916253846153847 219.91129999999998" transform="rotate(214.61538461538464 120 85)" filter="url(#glow)" />
+  <circle cx="130" cy="85" r="35" fill="none" stroke="#FFD43B" stroke-width="16" stroke-dasharray="16.916253846153847 219.91129999999998" transform="rotate(214.61538461538464 130 85)" filter="url(#glow)" />
 
-  <rect x="230" y="101" width="8" height="8" rx="2" fill="#FFD43B" />
-  <text x="245" y="109" font-family="Arial" font-size="12" fill="#F0F6FC">C++</text>
-  <text x="380" y="109" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">8%</text>
+  <rect x="230" y="103" width="10" height="10" rx="2" fill="#FFD43B" />
+  <text x="248" y="111" font-family="Arial" font-size="12" fill="#F0F6FC">C++</text>
+  <text x="380" y="111" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">8%</text>
 
-  <circle cx="120" cy="85" r="35" fill="none" stroke="#E34F26" stroke-width="20" stroke-dasharray="16.916253846153847 219.91129999999998" transform="rotate(242.30769230769232 120 85)" filter="url(#glow)" />
+  <circle cx="130" cy="85" r="35" fill="none" stroke="#E34F26" stroke-width="16" stroke-dasharray="16.916253846153847 219.91129999999998" transform="rotate(242.30769230769232 130 85)" filter="url(#glow)" />
 
-  <rect x="230" y="119" width="8" height="8" rx="2" fill="#E34F26" />
-  <text x="245" y="127" font-family="Arial" font-size="12" fill="#F0F6FC">HTML</text>
-  <text x="380" y="127" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">8%</text>
+  <rect x="230" y="121" width="10" height="10" rx="2" fill="#E34F26" />
+  <text x="248" y="129" font-family="Arial" font-size="12" fill="#F0F6FC">HTML</text>
+  <text x="380" y="129" font-family="Arial" font-size="12" fill="#8B949E" text-anchor="end">8%</text>
 
   <line x1="50" y1="130" x2="350" y2="130" stroke="#00FFFF" stroke-width="1" opacity="0.3" />
 </svg>
