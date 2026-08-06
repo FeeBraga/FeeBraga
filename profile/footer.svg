@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 60" width="1200" height="60">
+  <rect width="1200" height="60" fill="#0D1117" />
+  
+  <line x1="100" y1="30" x2="1100" y2="30" stroke="#FF00FF" stroke-width="1" opacity="0.5" />
+  
+  <text x="400" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚔️</text>
+  <text x="600" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">📖</text>
+  <text x="800" y="45" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚡</text>
+</svg>

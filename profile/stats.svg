@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 140" width="400" height="140">
+  <defs>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="140" fill="#0D1117" rx="12" stroke="#30363D" stroke-width="1" />
+  
+  <text x="200" y="28" font-family="Arial" font-size="16" fill="#00FF94" text-anchor="middle" font-weight="bold" letter-spacing="1">GITHUB STATS</text>
+  <line x1="50" y1="38" x2="350" y2="38" stroke="#00FF94" stroke-width="1" opacity="0.5" />
+
+  <rect x="30" y="43" width="340" height="24" rx="6" fill="#161B22" stroke="#21262D" stroke-width="1" />
+  <text x="45" y="59" font-family="Arial" font-size="12" fill="#8B949E">Repositories</text>
+  <text x="355" y="59" font-family="Arial" font-size="12" fill="#00FF94" text-anchor="end" font-weight="bold">15</text>
+
+  <rect x="30" y="63" width="340" height="24" rx="6" fill="#161B22" stroke="#21262D" stroke-width="1" />
+  <text x="45" y="79" font-family="Arial" font-size="12" fill="#8B949E">Followers</text>
+  <text x="355" y="79" font-family="Arial" font-size="12" fill="#FF00FF" text-anchor="end" font-weight="bold">47</text>
+
+  <rect x="30" y="83" width="340" height="24" rx="6" fill="#161B22" stroke="#21262D" stroke-width="1" />
+  <text x="45" y="99" font-family="Arial" font-size="12" fill="#8B949E">Following</text>
+  <text x="355" y="99" font-family="Arial" font-size="12" fill="#00FFFF" text-anchor="end" font-weight="bold">55</text>
+
+  <rect x="30" y="103" width="340" height="24" rx="6" fill="#161B22" stroke="#21262D" stroke-width="1" />
+  <text x="45" y="119" font-family="Arial" font-size="12" fill="#8B949E">Stars</text>
+  <text x="355" y="119" font-family="Arial" font-size="12" fill="#FFD43B" text-anchor="end" font-weight="bold">4</text>
+
+  <rect x="30" y="123" width="340" height="24" rx="6" fill="#161B22" stroke="#21262D" stroke-width="1" />
+  <text x="45" y="139" font-family="Arial" font-size="12" fill="#8B949E">Forks</text>
+  <text x="355" y="139" font-family="Arial" font-size="12" fill="#FF6B6B" text-anchor="end" font-weight="bold">0</text>
+
+  <line x1="50" y1="130" x2="350" y2="130" stroke="#FF00FF" stroke-width="1" opacity="0.3" />
+</svg>
